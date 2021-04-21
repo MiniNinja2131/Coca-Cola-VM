@@ -1,3 +1,9 @@
+/* Importing Coca Cola font */
+@font-face {
+    font-family: cocaColaFont;
+    src: url(../../assets/fonts/LOKICOLA.TTF);
+}
+
 body{
 	font-family: 'Poppins', sans-serif;
 	background: #fafafa;
@@ -9,6 +15,59 @@ p{
 	font-weight: 300;
 	line-height: 1.7em;
 	color: #999;
+}
+
+.logo{
+	text-align: center;
+	background-color: black;
+}
+    
+.logo h1 {
+    font-family: cocaColaFont; /* You don't need to repeat this for each media query as it is propagated */
+    font-size: 61px;
+	color: white;
+    margin: 0;
+	margin-right: 250px;
+    float: center;
+	padding-top: 10px;
+}
+    
+.logo h2 {
+    font-family: cocaColaFont;
+	color: white;
+    font-size: 61px;
+	margin-top: -64px;
+	margin-right: 80px;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 3px;
+    float: center;
+}
+    
+.logo h3 {
+    font-size: 48px;
+	color: white;
+	margin-top: -81px;
+	margin-right: -185px;
+    padding-top: 0px;
+    padding-left: 0px;
+    float: center;
+}
+    
+.logo p {
+    font-size: 17px; /* You may have to tweak this to get a good fit */
+	color: white;
+    margin-top: -19px; /* You may have to tweak this to get a good fit */
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-left: 3px;
+}
+
+.logo:hover h1,
+.logo:hover h2,
+.logo:hover h3,
+.logo:hover p{
+	color:red;
 }
 
 a,
@@ -37,9 +96,16 @@ a:focus{
 	transition: all 0.3s;
 }
 
+#sidebar ul{
+	list-style-type: none;
+}
+
+#sidebar ul li{
+	margin-left: -35px;
+}
+
 #sidebar ul.components{
 	/** note to self css for changing colour **/
-	padding: 20px 0;
 	border-bottom: 1px solid red;
 	/** add social media logo here after **/
 }
@@ -47,6 +113,7 @@ a:focus{
 #sidebar ul li a{
 	/** note to self css for changing colour **/
 	padding: 10px;
+	min-width: 100%;
 	font-size: 1.1em;
 	font-weight: bold;
 	display: block;
@@ -59,11 +126,16 @@ a:focus{
 	color: red;
 	background: #fff;
 }
+
 #sidebar ul li.active>a,
 a[aria-expanded="true"] {
 	/** note to self css for changing colour **/
 	color: red;
 	background: red;
+}
+
+#sidebarCollapse span {
+	display: none;
 }
 
 a[data-toggle="collapse"]{
@@ -100,15 +172,6 @@ ul ul a{
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px){
-    #sidebar {
-        margin-left: -220px;
-    }
-    #sidebar.active {
-        margin-left: 0;
-    }
-    #sidebarCollapse span {
-        display: none;
-    }
 }
 
 /* Medium devices (tablets, 768px and up) */
