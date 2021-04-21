@@ -87,7 +87,7 @@ a:focus{
 }
 
 #sidebar.active {
-    margin-left: -250px;
+    margin-left: -175px;
 }
 
 .wrapper{
@@ -97,8 +97,8 @@ a:focus{
 }
 
 #sidebar{
-	min-width: 250px;
-	max-width: 250px;
+	min-width: 175px;
+	max-width: 175px;
 	background: black;
 	color: #fff;
 	transition: all 0.3s;
@@ -126,6 +126,7 @@ a:focus{
 	display: block;
 	color: white;
 	text-decoration: none;
+	min-width: 100%;
 }
 
 #sidebar ul li a:hover{
@@ -167,15 +168,16 @@ ul ul a{
 
 #content{
 	width: 100%;
-	padding: 20px 0px 0px 0px;
+	padding: 10px 0px 0px 0px;
 	min-height: 100vh;
 	transition: all 0.3s;
+	margin-right: -10px;
 }
 
 .navButton{
 	color: red;
-	min-width: 50px;
-	min-height: 50px;
+	min-width: 35px;
+	min-height: 35px;
 }
 
 .carousel-inner{
@@ -209,7 +211,11 @@ ul ul a{
 	bottom: 0;
 	left: 0;
 	background-position: center;
+	/* change 
 	background-size: cover;
+	*/
+	background-size: contain;
+	background-repeat: no-repeat;
 	background-image: url("../../jisoo.png");
 	opacity: 0.5;
 }
@@ -220,22 +226,32 @@ ul ul a{
 	.wrapper{
 		background-color: blue;
 	}
-	
+
 	ul ul a{
 		font-size: .9em !important;
-		padding-left: 30px !important;
-		background: black;
 	}
 	
+	#sidebar.active {
+		margin-left: -250px;
+	}
+
+	#sidebar{
+		min-width: 250px;
+		max-width: 250px;
+	}
+
 	#sidebar ul li a{
-		/** note to self css for changing colour **/
-		padding: 10px;
-		min-width: 100%;
 		font-size: .9em;
-		font-weight: bold;
-		display: block;
-		color: white;
-		text-decoration: none;
+	}
+
+	.navButton{
+		color: red;
+		min-width: 50px;
+		min-height: 50px;
+	}
+	
+	#content{
+		margin-right: 0px;
 	}
 }
 
