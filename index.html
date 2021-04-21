@@ -26,62 +26,111 @@
     <body id = "bodyColour">
         <!-- Logo of Coca Cola text -->
         <div class = "logo">
-            <h1> 1oca </h1>
-            <h2> Cola </h2>
-            <h3> Journey </h3>
+            <div class = "logoTextTop">
+                <h1> 1oca </h1>
+                <h2> Cola </h2>
+                <h3> Journey </h3>
+            </div>
             <p> Refreshing the world, one story at a time </p>
         </div>
 
-        <!-- Side Navigation bar -->
-        <div class = "wrapper">
-            <nav id = "sidebar">
-                <ul class = "components">
-                    <li>
-                        <a href = "#"> Home </a>
-                    </li>
-
-                    <li>
-                        <a href = "#aboutSubmenu" data-toggle = "collapse" aria-expanded = "false" class = "dropdown-toggle"> About </a>
-                        <ul class="collapse" id="aboutSubmenu">
+        <div class = "row no-gutters">
+            <div class = "col-auto">
+                <!-- Side Navigation bar -->
+                <div class = "wrapper">
+                    <nav id = "sidebar">
+                        <ul class = "components">
                             <li>
-                                <a href = "#"> Statement of Originality </a>
+                                <a href = "#"> Home </a>
                             </li>
 
                             <li>
-                                <a href = "#"> References </a>
+                                <a href = "#aboutSubmenu" data-toggle = "collapse" aria-expanded = "false" class = "dropdown-toggle"> About </a>
+                                <ul class="collapse" id="aboutSubmenu">
+                                    <li>
+                                        <a href = "#"> Statement of Originality </a>
+                                    </li>
+
+                                    <li>
+                                        <a href = "#"> References </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href = "#"> 3D Model </a>
+                            </li>
+
+                            <li>
+                                <a href = "#"> Gallery </a>
                             </li>
                         </ul>
-                    </li>
+                    </nav>
 
-                    <li>
-                        <a href = "#"> 3D Model </a>
-                    </li>
-
-                    <li>
-                        <a href = "#"> Gallery </a>
-                    </li>
-                </ul>
-            </nav>
-
-            <!-- Side navigation button (collapse/open) -->
-            <div id = "content">
-                <nav class = "navbar navbar-expand-lg navbar-light">
-                    <div class = "container-fluid">
-                        <button type = "button" id = "sidebarCollapse" class = "navButton">
-                            <i class = "fas fa-align-left"></i>
-                        </button>
+                    <!-- Side navigation button (collapse/open) -->
+                    <div id = "content">
+                        <nav class = "navbar navbar-expand-lg navbar-light">
+                            <div class = "container-fluid">
+                                <button type = "button" id = "sidebarCollapse" class = "navButton">
+                                    <i class = "fas fa-align-left"></i>
+                                </button>
+                            </div>
+                        </nav>
                     </div>
-                </nav>
+                </div>
+            </div>
+
+            <div class = "col">
+                <!-- Image carousel -->
+                <div id = "imageCarousel" class = "carousel slide carousel-fade" data-ride = "carousel">
+                <!-- Image indication at the bottom -->
+                <ol class = "carousel-indicators">
+                    <li data-target = "#imageCarousel" data-slide-to = "0" class = "active"></li>
+                    <li data-target = "#imageCarousel" data-slide-to = "1"></li>
+                    <li data-target = "#imageCarousel" data-slide-to = "2"></li>
+                </ol>
+
+                <div class = "carousel-inner">
+                    <!-- First  image in carousel -->
+                    <div class = "carousel-item active" data-interval = "2000">
+                        <div class = "caraImg1"></div>
+                        <div class = "container">
+                            <h1> Brand title1 </h1>
+                            <p> Name of drink </p>
+                        </div>
+                    </div>
+
+                    <!-- Second image in carousel -->
+                    <div class = "carousel-item" data-interval = "2000">
+                        <div class = "caraImg2"> </div>
+                        <div class = "container">
+                            <h1> Brand title2 </h1>
+                            <p> Name of drink </p>
+                        </div>
+                    </div>
+
+                    <!-- Third image in carousel -->
+                    <div class = "carousel-item" data-interval = "2000">
+                        <div class = "caraImg3"></div>
+                        <div class = "container">
+                            <h1> Brand title3 </h1>
+                            <p> Name of drink </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Control for the carousel -->
+                <a href = "#imageCarousel" class = "carousel-control-prev" role = "button" data-slide = "prev">
+                    <span class = "sr-only"> Previous arrow </span>
+                    <span class = "carousel-control-prev-icon" aria-hidden = "true"></span>
+                </a>
+
+                <a href = "#imageCarousel" class = "carousel-control-next" role = "button" data-slide = "next">
+                    <span class = "sr-only"> Next arrow </span>
+                    <span class = "carousel-control-next-icon" aria-hidden = "true"></span>
+                </a>
+            </div>
             </div>
         </div>
-
-        <!-- Start of an Single Page Application -->
-        <div class = "container-fluid">
-            <!-- Start of Home page -->
-            <div id = "home" class = "main_contents">
-
-            </div>
-        </div>
-
     </body>
 </html>

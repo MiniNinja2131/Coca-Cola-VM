@@ -20,7 +20,8 @@ p{
 .logo{
 	text-align: center;
 	background-color: black;
-	min-width: 100%;
+	width: 100%;
+	min-width: 400px;
 }
     
 .logo h1 {
@@ -49,10 +50,11 @@ p{
     font-size: 48px;
 	color: white;
 	margin-top: -81px;
-	margin-right: -185px;
-    padding-top: 0px;
-    padding-left: 0px;
-    float: center;
+	margin-left: 185px;
+}
+
+.logoTextTop{
+	position: center;
 }
     
 .logo p {
@@ -71,6 +73,11 @@ p{
 	color:red;
 }
 
+.no-gutters{
+	margin-right: 0;
+	margin-left: 0;
+}
+
 a,
 a:hover,
 a:focus{
@@ -80,20 +87,18 @@ a:focus{
 }
 
 #sidebar.active {
-    margin-left: -200px;
+    margin-left: -250px;
 }
 
 .wrapper{
-	display: flex;
+	display: inline-flex;
 	text-decoration: none;
 	transition: all 0.3s;
-	min-height: 100vh;
 }
 
 #sidebar{
-	min-width: 200px;
-	max-width: 200px;
-	height: 200vh;
+	min-width: 250px;
+	max-width: 250px;
 	background: black;
 	color: #fff;
 	transition: all 0.3s;
@@ -116,8 +121,7 @@ a:focus{
 #sidebar ul li a{
 	/** note to self css for changing colour **/
 	padding: 10px;
-	min-width: 100%;
-	font-size: 1.1em;
+	font-size: .7em;
 	font-weight: bold;
 	display: block;
 	color: white;
@@ -154,8 +158,9 @@ a[data-toggle="collapse"]{
 	/** note to self css for changing colour **/
 	color: white;
 }
+
 ul ul a{
-	font-size: 0.9em !important;
+	font-size: .7em !important;
 	padding-left: 30px !important;
 	background: black;
 }
@@ -163,20 +168,74 @@ ul ul a{
 #content{
 	width: 100%;
 	padding: 20px 0px 0px 0px;
-	min-height: 100vmax;
+	min-height: 100vh;
 	transition: all 0.3s;
 }
 
 .navButton{
 	color: red;
-	min-width: 40px;
-	min-height: 40px;
+	min-width: 50px;
+	min-height: 50px;
 }
+
+.carousel-inner{
+	width: auto;
+	max-width: auto;
+	padding: 10px 10px 10px 10px;
+}
+
+.carousel-item{
+	height: 32rem;
+	background: #000;
+	color: white;
+	position: relative;
+	text-align: center;
+	background-position: center;
+	background-size: cover;
+}
+
+.container{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding-bottom: 50px;
+}
+
+.caraImg1{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-position: center;
+	background-size: cover;
+	background-image: url("../../jisoo.png");
+	opacity: 0.5;
+}
+
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px){
 	.wrapper{
 		background-color: blue;
+	}
+	
+	ul ul a{
+		font-size: .9em !important;
+		padding-left: 30px !important;
+		background: black;
+	}
+	
+	#sidebar ul li a{
+		/** note to self css for changing colour **/
+		padding: 10px;
+		min-width: 100%;
+		font-size: .9em;
+		font-weight: bold;
+		display: block;
+		color: white;
+		text-decoration: none;
 	}
 }
 
