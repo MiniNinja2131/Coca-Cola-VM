@@ -20,7 +20,6 @@ p{
 .logo{
 	text-align: center;
 	background-color: black;
-	min-width: 100%;
 }
     
 .logo h1 {
@@ -87,13 +86,11 @@ a:focus{
 	display: flex;
 	text-decoration: none;
 	transition: all 0.3s;
-	min-height: 100vh;
 }
 
 #sidebar{
 	min-width: 200px;
 	max-width: 200px;
-	height: 200vh;
 	background: black;
 	color: #fff;
 	transition: all 0.3s;
@@ -163,7 +160,7 @@ ul ul a{
 #content{
 	width: 100%;
 	padding: 20px 0px 0px 0px;
-	min-height: 100vmax;
+	min-height: 100vh;
 	transition: all 0.3s;
 }
 
