@@ -6,19 +6,66 @@
         <meta name = "viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
         <!-- CSS -->
-        <link rel = "stylesheet" href="css/custom.css">
+        <link rel = "stylesheet" href="scripts/css/style.css">
         <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-        <link rel = 'stylesheet' type='text/css' href='css/x3dom.css'>
+        <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!-- Icons -->
+        <link rel = "stylesheet" type='text/css' href='scripts/css/x3dom.css'>
 
         <!-- JavaScript/Scripts -->
-        <script type = 'text/javascript' src='scripts/js/x3dom.js'></script>
+        <script type = "text/javascript" src = "scripts/js/x3dom.js"></script>
         <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src = "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src = "https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        <title> </title>
+
+
+        <title> Coca Cola Web 3D Application  </title>
     </head>
 
-    <body>
+    <body id = "bodyColour">
+        <!-- Side Navigation bar -->
+        <div class = "wrapper">
+            <nav id = "sidebar">
+                <ul class = "lisst-unstyled components">
+                    <li class = "active">
+                        <a href = "#"> Home </a>
+                    </li>
 
+                    <li>
+                        <a href = "#aboutSubmenu" data-toggle = "collapse" aria-expanded = "false" class = "dropdown-toggle"> About </a>
+                        <ul class="collapse list-unstyled" id="aboutSubmenu">
+                            <li>
+                                <a href = "#"> Statement of Originality </a>
+                            </li>
+
+                            <li>
+                                <a href = "#"> References </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href = "#"> 3D Model </a>
+                    </li>
+
+                    <li>
+                        <a href = "#"> Gallery </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div id = "content">
+                <nav class = "navbar navbar-expand-lg navbar-light bg-light">
+                    <div class = "container-fluid">
+                        <button type = "button" id = "sidebarCollapse" class = "btn btn-info">
+                            <i class = "fas fa-align-left"></i>
+                            <span> Toggle Navigation </span>
+                        </button>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- 3D App header (Navigation bar) -->
     </body>
 </html>
