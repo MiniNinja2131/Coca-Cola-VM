@@ -9,7 +9,7 @@
         <link rel = "stylesheet" href="scripts/css/style.css">
         <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!-- Icons -->
-        <link rel = "stylesheet" type='text/css' href='scripts/css/x3dom.css'>
+        <link rel = "stylesheet" type = "text/css" href = "scripts/css/x3dom.css">
 
         <!-- JavaScript/Scripts -->
         <script type = "text/javascript" src = "scripts/js/x3dom.js"></script>
@@ -20,10 +20,30 @@
         <script src = "https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <script type = "text/javascript" src = "scripts/js/navigation.js"></script>
 
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="scripts/fancybox-master/dist/jquery.fancybox.min.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	    <script src="scripts/fancybox-master/dist/jquery.fancybox.min.js"></script>
+        <script src = "scripts/fancybox-master/src/js/thumbs.js"></script>
+        <link rel="stylesheet" type="text/css" href="scripts/fancybox-master/src/css/thumbs.css">
+
         <title> Coca Cola Web 3D Application  </title>
     </head>
 
     <body id = "bodyColour">
+        <a class="fancybox-thumb" rel="fancybox-thumb" href="http://farm6.staticflickr.com/5444/17679973232_568353a624_b.jpg" title="Golden Manarola (Sanjeev Deo)">
+            <img src="http://farm6.staticflickr.com/5444/17679973232_568353a624_m.jpg" alt="" />
+        </a>
+        <a class="fancybox-thumb" rel="fancybox-thumb" href="http://farm8.staticflickr.com/7367/16426879675_e32ac817a8_b.jpg" title="Codirosso spazzacamino (Massimo Greco _Foligno)">
+            <img src="http://farm8.staticflickr.com/7367/16426879675_e32ac817a8_m.jpg" alt="" />
+        </a>
+        <a class="fancybox-thumb" rel="fancybox-thumb" href="http://farm6.staticflickr.com/5612/15344856989_449794889d_b.jpg" title="Morning Twilight (Jose Hamra Images)">
+            <img src="http://farm6.staticflickr.com/5612/15344856989_449794889d_m.jpg" alt="" />
+        </a>
+        <a class="fancybox-thumb" rel="fancybox-thumb" href="http://farm8.staticflickr.com/7289/16207238089_0124105172_b.jpg" title="(Eric Goncalves (cathing up again!))">
+            <img src="http://farm8.staticflickr.com/7289/16207238089_0124105172_m.jpg" alt="" />
+        </a>
         <!-- Logo of Coca Cola text -->
         <div class = "logo">
             <div class = "logoTextTop">
@@ -35,6 +55,7 @@
         </div>
 
         <div class = "row no-gutters">
+            <!-- Two column; one = navigation bar, two = content of website (homepage, model, gallery etc) -->
             <div class = "col-auto">
                 <!-- Side Navigation bar -->
                 <div class = "wrapper">
@@ -68,7 +89,7 @@
                     </nav>
 
                     <!-- Side navigation button (collapse/open) -->
-                    <div id = "content">
+                    <div id = "navBtn">
                         <nav class = "navbar navbar-expand-lg navbar-light">
                             <div class = "container-fluid">
                                 <button type = "button" id = "sidebarCollapse" class = "navButton">
@@ -80,56 +101,118 @@
                 </div>
             </div>
 
+            <!-- Start of the Single Page Application (SPA) -->
             <div class = "col">
-                <!-- Image carousel -->
-                <div id = "imageCarousel" class = "carousel slide carousel-fade" data-ride = "carousel">
-                <!-- Image indication at the bottom -->
-                <ol class = "carousel-indicators">
-                    <li data-target = "#imageCarousel" data-slide-to = "0" class = "active"></li>
-                    <li data-target = "#imageCarousel" data-slide-to = "1"></li>
-                    <li data-target = "#imageCarousel" data-slide-to = "2"></li>
-                </ol>
+                <div class = "container-fluid">
+                    <!-- Start of Home page -->
+                    <div id = "home" class = "main_contents">
+                        <!-- Image carousel -->
+                        <div id = "imageCarousel" class = "carousel slide carousel-fade" data-ride = "carousel">
+                            <!-- Image indication at the bottom -->
+                            <ol class = "carousel-indicators">
+                                <li data-target = "#imageCarousel" data-slide-to = "0" class = "active"></li>
+                                <li data-target = "#imageCarousel" data-slide-to = "1"></li>
+                                <li data-target = "#imageCarousel" data-slide-to = "2"></li>
+                            </ol>
+            
+                            <div class = "carousel-inner">
+                                <!-- First  image in carousel -->
+                                <div class = "carousel-item active" data-interval = "2000">
+                                    <div class = "caraImg1"></div>
+                                    <div class = "carouselImgContainer">
+                                        <h1> Brand title1 </h1>
+                                        <p> Name of drink </p>
+                                    </div>
+                                </div>
+            
+                                <!-- Second image in carousel -->
+                                <div class = "carousel-item" data-interval = "2000">
+                                    <div class = "caraImg2"> </div>
+                                    <div class = "carouselImgContainer">
+                                        <h1> Brand title2 </h1>
+                                        <p> Name of drink </p>
+                                    </div>
+                                </div>
+            
+                                <!-- Third image in carousel -->
+                                <div class = "carousel-item" data-interval = "2000">
+                                    <div class = "caraImg3"></div>
+                                    <div class = "carouselImgContainer">
+                                        <h1> Brand title3 </h1>
+                                        <p> Name of drink </p>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <!-- Control for the carousel -->
+                            <a href = "#imageCarousel" class = "carousel-control-prev" role = "button" data-slide = "prev">
+                                <span class = "sr-only"> Previous arrow </span>
+                                <span class = "carousel-control-prev-icon" aria-hidden = "true"></span>
+                            </a>
+            
+                            <a href = "#imageCarousel" class = "carousel-control-next" role = "button" data-slide = "next">
+                                <span class = "sr-only"> Next arrow </span>
+                                <span class = "carousel-control-next-icon" aria-hidden = "true"></span>
+                            </a>
+                        </div> <!-- End of Image carousel in home page -->
 
-                <div class = "carousel-inner">
-                    <!-- First  image in carousel -->
-                    <div class = "carousel-item active" data-interval = "2000">
-                        <div class = "caraImg1"></div>
-                        <div class = "container">
-                            <h1> Brand title1 </h1>
-                            <p> Name of drink </p>
-                        </div>
-                    </div>
+                        <div class = "row">
+                            <!-- Fanta product info at home page -->
+                            <div class = "col-sm-4">
+                                <div class = "card img-narrow">
+                                    <a class="fancybox-thumb" rel="fancybox-thumb" href="http://farm6.staticflickr.com/5444/17679973232_568353a624_b.jpg" title="Golden Manarola (Sanjeev Deo)">
+                                        <img src="http://farm6.staticflickr.com/5444/17679973232_568353a624_m.jpg" alt="" />
+                                    </a>
+                                    <a class="fancybox-thumb" rel="fancybox-thumb" href="http://farm8.staticflickr.com/7367/16426879675_e32ac817a8_b.jpg" title="Codirosso spazzacamino (Massimo Greco _Foligno)">
+                                        <img src="http://farm8.staticflickr.com/7367/16426879675_e32ac817a8_m.jpg" alt="" />
+                                    </a>
+                                    <a class="fancybox-thumb" rel="fancybox-thumb" href="http://farm6.staticflickr.com/5612/15344856989_449794889d_b.jpg" title="Morning Twilight (Jose Hamra Images)">
+                                        <img src="http://farm6.staticflickr.com/5612/15344856989_449794889d_m.jpg" alt="" />
+                                    </a>
+                                    <a class="fancybox-thumb" rel="fancybox-thumb" href="http://farm8.staticflickr.com/7289/16207238089_0124105172_b.jpg" title="(Eric Goncalves (cathing up again!))">
+                                        <img src="http://farm8.staticflickr.com/7289/16207238089_0124105172_m.jpg" alt="" />
+                                    </a>
+                                </div>
+                            </div>  
+           
+                            <!-- Oasis product info at home page -->
+                            <div class = "col-sm-4">
+                                <div class = "card img-narrow">
+                                    <a class="fancybox" rel="gallery1" href="http://farm2.staticflickr.com/1459/23610702803_83655c7c56_b.jpg" title="Electrical Power Lines and Pylons disappear over t.. (pautliubomir)">
+                                        <img src="http://farm2.staticflickr.com/1459/23610702803_83655c7c56_m.jpg" alt="" />
+                                    </a>
+                            </div>
 
-                    <!-- Second image in carousel -->
-                    <div class = "carousel-item" data-interval = "2000">
-                        <div class = "caraImg2"> </div>
-                        <div class = "container">
-                            <h1> Brand title2 </h1>
-                            <p> Name of drink </p>
-                        </div>
-                    </div>
+                            <!-- Schweppes product info at home page -->
+                            <div class = "col-sm-4">
+                                <div class = "card img-narrow">
+                                    <a class="fancybox" rel="gallery1" href="http://farm2.staticflickr.com/1617/24108587812_6c9825d0da_b.jpg" title="Morning Godafoss (Brads5)">
+                                        <img src="http://farm2.staticflickr.com/1617/24108587812_6c9825d0da_m.jpg" alt="" />
+                                    </a>
+                            </div>
 
-                    <!-- Third image in carousel -->
-                    <div class = "carousel-item" data-interval = "2000">
-                        <div class = "caraImg3"></div>
-                        <div class = "container">
-                            <h1> Brand title3 </h1>
-                            <p> Name of drink </p>
+                            <script>
+                                $(document).ready(function() {
+                                    $(".fancybox-thumb").fancybox({
+                                        prevEffect	: 'none',
+                                        nextEffect	: 'none',
+                                        helpers	: {
+                                            title	: {
+                                                type: 'outside'
+                                            },
+                                            thumbs	: {
+                                                width	: 50,
+                                                height	: 50
+                                            }
+                                        }
+                                    });
+                                });
+                            </script>
                         </div>
-                    </div>
+
+                    </div> <!-- End of Home page -->
                 </div>
-
-                <!-- Control for the carousel -->
-                <a href = "#imageCarousel" class = "carousel-control-prev" role = "button" data-slide = "prev">
-                    <span class = "sr-only"> Previous arrow </span>
-                    <span class = "carousel-control-prev-icon" aria-hidden = "true"></span>
-                </a>
-
-                <a href = "#imageCarousel" class = "carousel-control-next" role = "button" data-slide = "next">
-                    <span class = "sr-only"> Next arrow </span>
-                    <span class = "carousel-control-next-icon" aria-hidden = "true"></span>
-                </a>
-            </div>
+            </div> <!-- End of the Single Page Application (SPA) -->
         </div>
     </body>
 </html>

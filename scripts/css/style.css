@@ -166,7 +166,7 @@ ul ul a{
 	background: black;
 }
 
-#content{
+#navBtn{
 	width: 100%;
 	padding: 10px 0px 0px 0px;
 	min-height: 100vh;
@@ -196,7 +196,7 @@ ul ul a{
 	background-size: cover;
 }
 
-.container{
+.carouselImgContainer{
 	position: absolute;
 	right: 0;
 	bottom: 0;
@@ -218,6 +218,21 @@ ul ul a{
 	background-repeat: no-repeat;
 	background-image: url("../../jisoo.png");
 	opacity: 0.5;
+}
+
+.img-narrow {
+    padding-left: 1.0rem;
+    padding-right: 1.0rem;
+}
+
+.img-thumbnail {
+    padding: 0.25rem;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    max-width: 100%;
+    height: auto;
 }
 
 
