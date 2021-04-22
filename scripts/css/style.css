@@ -180,6 +180,15 @@ ul ul a{
 	min-height: 35px;
 }
 
+.socialMediaIcon{
+	color: white;
+	padding: 5px;
+}
+
+.socialMediaIcon:hover{
+	color: red;
+}
+
 .carousel-inner{
 	width: auto;
 	max-width: auto;
