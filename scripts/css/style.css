@@ -169,7 +169,7 @@ ul ul a{
 #navBtn{
 	width: 100%;
 	padding: 10px 0px 0px 0px;
-	min-height: 100vh;
+	min-height: 200vh;
 	transition: all 0.3s;
 	margin-right: -10px;
 }
@@ -235,6 +235,13 @@ ul ul a{
     height: auto;
 }
 
+.test321{
+	width: 100px;
+	object-position: center;
+	object-fit: cover;
+	background-position: center;
+}
+
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px){
@@ -268,6 +275,18 @@ ul ul a{
 	#content{
 		margin-right: 0px;
 	}
+}
+
+.homepageMedia{
+	width: auto;
+	min-height: 500px;
+}
+iframe{
+	display: block;
+	background: #000;
+	border: none;
+	height: 100%;
+	width: 100%;
 }
 
 /* Medium devices (tablets, 768px and up) */
