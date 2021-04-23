@@ -87,7 +87,6 @@ a:focus{
 }
 
 .wrapper{
-	min-height: 100%;
 	display: inline-flex;
 	text-decoration: none;
 	transition: all 0.3s;
@@ -99,12 +98,12 @@ a:focus{
 	background: black;
 	color: #fff;
 	transition: all 0.3s;
-	min-height: 100vh;
+	min-height: 120vh;
 }
 
 #sidebar.active {
     margin-left: -175px;
-	min-height: 100vh;
+	min-height: 105vh;
 }
 
 #sidebar ul.components{
@@ -345,6 +344,7 @@ a[data-toggle="collapse"]{
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px){
 	.wrapper{
+		min-height: 100%;
 		background-color: blue;
 	}
 
@@ -355,12 +355,12 @@ a[data-toggle="collapse"]{
 	#sidebar{
 		min-width: 200px;
 		max-width: 200px;
-		min-height: 100vh;
+		min-height: 160vh;
 	}
 
 	#sidebar.active {
 		margin-left: -200px;
-		min-height: 100vh;
+		min-height: 190vh;
 	}
 
 	#sidebar ul li a{
@@ -394,15 +394,26 @@ a[data-toggle="collapse"]{
 	}
 
 	#sidebar{
-		min-height: 100vh;
+		min-height: 208vh;
 	}
 
 	#sidebar.active {
-		min-height: 100vh;
+		min-height: 214vh;
 	}
 
 	.footerText{
 		font-size: .7em;
+	}
+}
+
+/* Pixel 2 XL horizontal */
+@media (min-width: 823px) and (min-height: 411px){
+	#sidebar{
+		min-height: 318.4vh;
+	}
+
+	#sidebar.active {
+		min-height: 345.5vh;
 	}
 }
 
@@ -415,12 +426,12 @@ a[data-toggle="collapse"]{
 	#sidebar{
 		min-width: 230px;
 		max-width: 230px;
-		min-height: 100vh;
+		min-height: 215.9vh;
 	}
 
 	#sidebar.active {
 		margin-left: -230px;
-		min-height: 100vh;
+		min-height: 233.3vh;
 	}
 
 	.socialMediaContainer{
@@ -433,20 +444,72 @@ a[data-toggle="collapse"]{
 	}
 }
 
+/* Ipad horizontal mode */
+@media (min-width: 1024px) and (min-height: 768px){
+	#sidebar{
+		min-height: 194.5vh;
+	}
+
+	#sidebar.active {
+		min-height: 208vh;
+	}
+}
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px){ 
+@media (min-width: 1200px) and (min-height: 600px) { 
 	.wrapper{
 		background-color: orange !important;
 	}
 
 	#sidebar{
-		min-height: 100vh;
+		min-height: 252.5vh;
 	}
 
 	#sidebar.active {
-		min-height: 100vh;
+		min-height: 281vh;
 	}
 
+}
+
+/* Laptop with HIDPI */
+@media (min-width: 1440px) and (min-height: 900px) {  
+	#sidebar{
+		min-height: 208vh;
+	}
+
+	#sidebar.active {
+		min-height: 225vh;
+	}
+}
+
+@media (min-width: 1450px) {  
+	#sidebar{
+		min-height: 231vh;
+	}
+
+	#sidebar.active {
+		min-height: 256vh;
+	}
+}
+
+@media (min-width: 2000px) {  
+	#sidebar{
+		min-height: 224vh;
+	}
+
+	#sidebar.active {
+		min-height: 239.5vh;
+	}
+}
+
+/* 4K devices 2560px */
+@media (min-width: 2000px) and  (min-height: 1000px){  
+	#sidebar{
+		min-height: 213vh;
+	}
+
+	#sidebar.active {
+		min-height: 228.5vh;
+	}
 }
 
