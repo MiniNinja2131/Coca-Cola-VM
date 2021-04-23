@@ -20,6 +20,7 @@
         <script src = "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src = "https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <script type = "text/javascript" src = "scripts/js/navigation.js"></script>
+        <script type = "text/javascript" src = "scripts/js/carousel.js"></script>
 
         <script type="text/javascript" src="scripts/fancybox-2.1.7/lib/jquery-1.10.2.min.js"></script>
         <script type="text/javascript" src="scripts/fancybox-2.1.7/source/jquery.fancybox.js"></script>
@@ -191,29 +192,30 @@
                                     </div>
                                 </div>
                             </div>
-        
-                            <script>
-                                $(document).ready(function() {
-                                    $("#productImg").fancybox({
-                                        openEffect	: 'elastic',
-                                        closeEffect	: 'elastic',
-        
-                                        helpers : {
-                                            title : {
-                                                type : 'inside'
-                                            }
-                                        }
-                                    });
-                                });
-                            </script>
                         </div>
                     </div>
 
                     <div class="iframe-container">
                         <iframe frameborder = "0" src="https://www.youtube.com/embed/sVZpHFXcFJw?" allowfullscreen> </iframe>
                     </div>
+
                 </div> <!-- End of Home page -->
+
+                <!-- Start of Footer -->
+                <nav id = "footerColor" class = "navbar navbar-expand-sm footer">
+                    <div class = "container-fluid">   
+                        <div class = "navbar-text float-left social">
+                            <p><a href = "#"> Privacy Policy </a> | <a href = "#"> Cookie Policy </a> | <a href = "#"> Terms of use | <a href = "#"> Contact </p>
+                        </div>
+
+                        <div class = "navbar-text float-right copyright">
+                            <p><span class="align-baseline"> &copy 2021 3D Apps Assignment | <a href = "javascript:changeLook()"> Restyle </a> | <a href = "javascript:changeBack()"> Reset </a></span></p>
+                        </div>
+                    </div>
+                </nav> <!-- End of Footer -->
             </div> <!-- End of the Single Page Application (SPA) -->
+
+
         </div>
     </body>
 </html>
