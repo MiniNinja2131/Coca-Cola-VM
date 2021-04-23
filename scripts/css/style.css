@@ -1,5 +1,5 @@
 /* Importing Coca Cola font */
-@font-face {
+@font-face{
     font-family: cocaColaFont;
     src: url(../../assets/fonts/LOKICOLA.TTF);
 }
@@ -24,7 +24,7 @@ p{
 	min-width: 400px;
 }
     
-.logo h1 {
+.logo h1{
     font-family: cocaColaFont; /* You don't need to repeat this for each media query as it is propagated */
     font-size: 61px;
 	color: white;
@@ -33,8 +33,8 @@ p{
     float: center;
 	padding-top: 10px;
 }
-    
-.logo h2 {
+
+.logo h2{
     font-family: cocaColaFont;
 	color: white;
     font-size: 61px;
@@ -46,7 +46,7 @@ p{
     float: center;
 }
     
-.logo h3 {
+.logo h3{
     font-size: 48px;
 	color: white;
 	margin-top: -81px;
@@ -57,7 +57,7 @@ p{
 	position: center;
 }
     
-.logo p {
+.logo p{
     font-size: 17px; /* You may have to tweak this to get a good fit */
 	color: white;
     margin-top: -19px; /* You may have to tweak this to get a good fit */
@@ -86,10 +86,6 @@ a:focus{
 	transition: all 0.3s;
 }
 
-#sidebar.active {
-    margin-left: -175px;
-}
-
 .wrapper{
 	display: inline-flex;
 	text-decoration: none;
@@ -102,6 +98,38 @@ a:focus{
 	background: black;
 	color: #fff;
 	transition: all 0.3s;
+	min-height: 120vh;
+}
+
+#sidebar.active {
+    margin-left: -175px;
+	min-height: 105vh;
+}
+
+#sidebar ul.components{
+	/** note to self css for changing colour **/
+	border-bottom: 3px solid red;
+	/** add social media logo here after **/
+}
+
+.socialMediaContainer{
+	padding: 5px 5px 5px 16px;
+}
+
+.socialMediaIcon{
+	color: white;
+	/** Size of icon **/
+	font-size: 50px;
+}
+
+.socialMediaIcon:hover{
+	color: red;
+}
+
+ul ul a{
+	font-size: .7em !important;
+	padding-left: 30px !important;
+	background: black;
 }
 
 #sidebar ul{
@@ -110,12 +138,6 @@ a:focus{
 
 #sidebar ul li{
 	margin-left: -35px;
-}
-
-#sidebar ul.components{
-	/** note to self css for changing colour **/
-	border-bottom: 5px solid red;
-	/** add social media logo here after **/
 }
 
 #sidebar ul li a{
@@ -136,13 +158,13 @@ a:focus{
 }
 
 #sidebar ul li.active>a,
-a[aria-expanded="true"] {
+a[aria-expanded="true"]{
 	/** note to self css for changing colour **/
 	color: red;
 	background: red;
 }
 
-#sidebarCollapse span {
+#sidebarCollapse span{
 	display: none;
 }
 
@@ -160,33 +182,19 @@ a[data-toggle="collapse"]{
 	color: white;
 }
 
-ul ul a{
-	font-size: .7em !important;
-	padding-left: 30px !important;
-	background: black;
-}
-
-#navBtn{
+#navBtnBar{
+	display: "none";
 	width: 100%;
 	padding: 10px 0px 0px 0px;
-	min-height: 200vh;
 	transition: all 0.3s;
 	margin-right: -10px;
 }
 
 .navButton{
+	position: relative;
 	color: red;
 	min-width: 35px;
 	min-height: 35px;
-}
-
-.socialMediaIcon{
-	color: white;
-	padding: 5px;
-}
-
-.socialMediaIcon:hover{
-	color: red;
 }
 
 .carousel-inner{
@@ -229,9 +237,8 @@ ul ul a{
 	opacity: 0.5;
 }
 
-.img-narrow {
-    padding-left: 1.0rem;
-    padding-right: 1.0rem;
+.productInfoContainer{
+	background-color: inherit;
 }
 
 .img-thumbnail {
@@ -242,26 +249,20 @@ ul ul a{
     height: auto;
 }
 
-.test321{
-	width: 100px;
-}
-
 .iframe-container{
 	position: relative;
 	width: 100%;
-	padding-bottom: 56.25%; 
-  }
+	padding-bottom: 65%; 
+}
 
-  .iframe-container iframe{
+.iframe-container iframe{
 	position: absolute;
 	top:0;
 	left: 0;
 	width: 100%;
 	height: 100%;
-	padding-left: 10px;
-	padding-right: 10px;
-  }
-
+	padding: 10px;
+}
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px){
@@ -273,28 +274,39 @@ ul ul a{
 		font-size: .9em !important;
 	}
 	
-	#sidebar.active {
-		margin-left: -250px;
+	#sidebar{
+		min-width: 200px;
+		max-width: 200px;
+		min-height: 160vh;
 	}
 
-	#sidebar{
-		min-width: 250px;
-		max-width: 250px;
+	#sidebar.active {
+		margin-left: -200px;
+		min-height: 190vh;
 	}
 
 	#sidebar ul li a{
 		font-size: .9em;
 	}
 
-	.navButton{
-		color: red;
-		min-width: 50px;
-		min-height: 50px;
+	#navBtnBar{
+		display: "none";
+		width: 100%;
+		padding: 10px 0px 0px 0px;
+
+		transition: all 0.3s;
+		margin-right: -0px;
 	}
 	
-	#content{
-		margin-right: 0px;
+	.socialMediaContainer{
+		padding-left: 29px;
 	}
+
+	.navButton{
+		min-width: 40px;
+		min-height: 40px;
+	}
+	
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -302,12 +314,40 @@ ul ul a{
 	.wrapper{
 		background-color: red !important;
 	}
+
+	#sidebar{
+		min-height: 165vh;
+	}
+
+	#sidebar.active {
+		min-height: 195vh;
+	}
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
 	.wrapper{
 		background-color: purple !important;
+	}
+
+	#sidebar{
+		min-width: 230px;
+		max-width: 230px;
+		min-height: 195vh;
+	}
+
+	#sidebar.active {
+		margin-left: -230px;
+		min-height: 230vh;
+	}
+
+	.socialMediaContainer{
+		padding-left: 19px;
+	}
+
+	.navButton{
+		min-width: 50px;
+		min-height: 50px;
 	}
 }
 
