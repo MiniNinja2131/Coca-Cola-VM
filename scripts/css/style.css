@@ -342,6 +342,10 @@ a[data-toggle="collapse"]{
 	color: white;
 }
 
+#statement{
+	display: none;
+}
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px){
 	.wrapper{
@@ -384,6 +388,10 @@ a[data-toggle="collapse"]{
 		min-width: 40px;
 		min-height: 40px;
 	}
+
+	.footerText{
+		font-size: .7em;
+	}
 	
 }
 
@@ -402,7 +410,7 @@ a[data-toggle="collapse"]{
 	}
 
 	.footerText{
-		font-size: .7em;
+		font-size: .9em;
 	}
 }
 
@@ -431,6 +439,10 @@ a[data-toggle="collapse"]{
 		min-width: 50px;
 		min-height: 50px;
 	}
+
+	.footerText{
+		font-size: 1em;
+	}
 }
 
 
@@ -448,5 +460,8 @@ a[data-toggle="collapse"]{
 		min-height: 100vh;
 	}
 
+	.footerText{
+		font-size: 1.1em;
+	}
 }
 
