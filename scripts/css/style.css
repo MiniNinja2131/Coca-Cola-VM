@@ -325,6 +325,10 @@ a[data-toggle="collapse"]{
 	font-size: .7em;
 }
 
+.footerText:hover{
+	color: red;
+}
+
 .copyright {
     padding-top: 13px;
     font-size: 80%;
@@ -332,6 +336,10 @@ a[data-toggle="collapse"]{
 
 .copyright a{
 	color: white;
+}
+
+.copyright a:hover{
+	color: red;
 }
 
 .social {
@@ -342,9 +350,22 @@ a[data-toggle="collapse"]{
 	color: white;
 }
 
+.social a:hover{
+	color: red;
+}
+
 #statement{
 	display: none;
 }
+
+#references{
+	display: none;
+}
+
+#model{
+	display: none;
+}
+
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px){
