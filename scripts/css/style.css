@@ -366,7 +366,19 @@ a[data-toggle="collapse"]{
 	display: none;
 }
 
+/*
+#fantaNutritionText{
+	display: none;
+}
 
+#oasisNutritionText{
+	display: none;
+}
+
+#schweppesNutritionText{
+	display: none;
+}
+*/
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px){
 	.wrapper{

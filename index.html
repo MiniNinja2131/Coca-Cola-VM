@@ -21,6 +21,7 @@
         <script src = "https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <script type = "text/javascript" src = "scripts/js/navigation.js"></script>
         <script type = "text/javascript" src = "scripts/js/carousel.js"></script>
+        <script type = "text/javascript" src = "scripts/js/modelNavigation.js"></script>
 
         <script type="text/javascript" src="scripts/fancybox-2.1.7/lib/jquery-1.10.2.min.js"></script>
         <script type="text/javascript" src="scripts/fancybox-2.1.7/source/jquery.fancybox.js"></script>
@@ -252,15 +253,16 @@
                                     </ul>
                                 </div>
 
+                                <!-- 3D model -->
                                 <div class = "card-body">
                                     <div>
                                         <div id = "x3dModelTitleFanta" class = "card-title drinksText"></div>
                                         <div id = "x3dModelTitleOasis" class = "card-title drinksText"></div>
                                         <div id = "x3dModelTitleSchweppes" class = "card-title drinksText"></div>
 
-                                        <button type = "button" class = "btn btn-danger btn-responsive" onMouseUp="cokeScene(); cokeDescription();"> Fanta Model </button>
-                                        <button type = "button" class = "btn btn-danger btn-responsive" onMouseUp="cokeScene(); cokeDescription();"> Oasis Model </button>
-                                        <button type = "button" class = "btn btn-danger btn-responsive" onMouseUp="cokeScene(); cokeDescription();"> Schweppes Model </button>
+                                        <button type = "button" class = "btn btn-danger btn-responsive" onMouseUp = "fantaScene(); fantaDescription();"> Fanta Model </button>
+                                        <button type = "button" class = "btn btn-danger btn-responsive" onMouseUp = "oasisScene(); oasisDescription();"> Oasis Model </button>
+                                        <button type = "button" class = "btn btn-danger btn-responsive" onMouseUp = "schweppesScene(); schweppesDescription();"> Schweppes Model </button>
 
 
                                         <div class = "3dModel">
@@ -280,6 +282,43 @@
                                                 </scene>
                                             </x3d>
                                         </div>
+                                        <div id = "x3dCreationMethodFanta" class = "card-text drinksText"> This X3D model of the Fanta can has been created in Maya, imported to 3DS max and then exported to VRML97 and converted, using the instantreality transcoders, to X3D for display online </div>
+                                        <div id = "x3dCreationMethodOasis" class = "card-text drinksText"> This X3D model of the Oasis bottle has been created in 3DS Max, exported to VRML97 and converted, using the instantreality transcoders, to X3D for display online </div>
+                                        <div id = "x3dCreationMethodSchweppes" class = "card-text drinksText"> This X3D model of the Schweppes bottle has been created in 3DS Max, exported to VRML97 and converted, using the instantreality transcoders, to X3D for display online </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Text regarding the nutrition value of the drinks -->
+                        <div class = "col-sm-4">
+                            <div class = "card text-left">
+                                <div class = "card-header nutritious-header">
+                                    <ul class = "nav nav-tabs card-header-tabs">
+                                        <li class = "nav-item">
+                                            <a class = "nav-link active" href = "#"> Nutrition Value </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                                <!-- Nutrious data for each drink (fanta, oasis, schweppes)-->
+                                <div class = "card-body">
+                                    <div id = "fantaNutritionText">
+                                        <div class = "card-title nutritionFantaTitle drinksText"> Fanta </div>
+                                        <div class = "card-subtitle nutritionFantaSubtitle drinksText"> Energy Fat </div>
+                                        <div class = "card-text nutritionFantaDescription drinksText"> ingredients </div>
+                                    </div>
+
+                                    <div id = "oasisNutritionText">
+                                        <div class = "card-title nutritionOasisTitle drinksText"> Oasis Summer Fruits </div>
+                                        <div class = "card-subtitle nutritionOasisSubtitle drinksText"> Energy Fat </div>
+                                        <div class = "card-text nutritionOasisDescription drinksText"> ingredients </div>
+                                    </div>
+
+                                    <div id = "schweppesNutritionText">
+                                        <div class = "card-title nutritionSchweppesTitle drinksText"> Schweppes Indian Tonic Water </div>
+                                        <div class = "card-subtitle nutritionSchweppesSubtitle drinksText"> Energy Fat </div>
+                                        <div class = "card-text nutritionSchweppesDescription drinksText"> ingredients </div>
                                     </div>
                                 </div>
                             </div>

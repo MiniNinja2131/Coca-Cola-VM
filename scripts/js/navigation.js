@@ -9,7 +9,6 @@ $(document).ready(function () {
 
 /* Navigation for a Single Page Application */
 function selectPage() {
-
     /* Home page */
 	$('#home').show();
     $('#statement').hide();
@@ -46,7 +45,19 @@ function selectPage() {
         $('#statement').hide();
         $('#references').hide();
         $('#model').show();
-        $('#gallery').hide();	  
+        $("#x3dModelTitleFanta").show();
+        $("#x3dModelTitleOasis").hide();
+        $("#x3dModelTitleSchweppes").hide();
+
+        $("#x3dCreationMethodFanta").show();
+        $("#x3dCreationMethodOasis").hide();
+        $("#x3dCreationMethodSchweppes").hide();
+
+        $("#fantaNutritionText").show();
+        $("#oasisNutritionText").hide();
+        $("#schweppesNutritionText").hide();
+        $('#gallery').hide();
+
 	});
 
     $('#navGallery').click(function(){
@@ -56,21 +67,52 @@ function selectPage() {
         $('#model').hide();
         $('#gallery').show();	  
 	});
+}
 
-    /* To be added
-	$('#navModels').click(function(){
-		$('#home').hide();
-		$('#about').hide();
-		$('#models').show();
-		$('#interaction').show(); 
-		$('#cokeDescription').show();
-		$('#spriteDescription').hide(); 
-		$('#pepperDescription').hide();
-		$("#x3dModelTitle_coke").show();
-		$("#x3dModelTitle_sprite").hide();
-		$("#x3dModelTitle_pepper").hide();
-		$("#x3dCreationMethod_coke").show();
-		$("#x3dCreationMethod_sprite").hide();
-		$("#x3dCreationMethod_pepper").hide(); 
-	});*/
+function fantaDescription(){
+    $("button").click(function(){
+        $("#x3dModelTitleFanta").show();
+        $("#x3dModelTitleOasis").hide();
+        $("#x3dModelTitleSchweppes").hide();
+
+        $("#x3dCreationMethodFanta").show();
+        $("#x3dCreationMethodOasis").hide();
+        $("#x3dCreationMethodSchweppes").hide();
+
+        $("#fantaNutritionText").show();
+        $("#oasisNutritionText").hide();
+        $("#schweppesNutritionText").hide();
+    }); 
+}
+
+function oasisDescription(){
+    $("button").click(function(){
+        $("#x3dModelTitleFanta").hide();
+        $("#x3dModelTitleOasis").show();
+        $("#x3dModelTitleSchweppes").hide();
+
+        $("#x3dCreationMethodFanta").hide();
+        $("#x3dCreationMethodOasis").show();
+        $("#x3dCreationMethodSchweppes").hide();
+
+        $("#fantaNutritionText").hide();
+        $("#oasisNutritionText").show();
+        $("#schweppesNutritionText").hide();
+    }); 
+}
+
+function schweppesDescription(){
+    $("button").click(function(){
+        $("#x3dModelTitleFanta").hide();
+        $("#x3dModelTitleOasis").hide();
+        $("#x3dModelTitleSchweppes").show();
+
+        $("#x3dCreationMethodFanta").hide();
+        $("#x3dCreationMethodOasis").hide();
+        $("#x3dCreationMethodSchweppes").show();
+
+        $("#fantaNutritionText").hide();
+        $("#oasisNutritionText").hide();
+        $("#schweppesNutritionText").show();
+    }); 
 }
