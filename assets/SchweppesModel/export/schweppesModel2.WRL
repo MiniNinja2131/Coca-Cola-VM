@@ -1,10 +1,10 @@
 #VRML V2.0 utf8
 
 # Produced by 3D Studio MAX VRML97 exporter, Version 21, Revision 8.45
-# MAX File: schweppesComplete.max, Date: Mon Apr 26 20:48:50 2021
+# MAX File: schweppesComplete.max, Date: Mon Apr 26 22:33:35 2021
 
 DEF FrontCamera Viewpoint {
-  position -0.1296 1.146 20.03
+  position -0.1296 0.5002 19.02
   orientation 0 1 0 -0.008645
   fieldOfView 0.6024
   description "FrontCamera"
@@ -12,16 +12,16 @@ DEF FrontCamera Viewpoint {
 DEF BackLight SpotLight {
   intensity 1
   color 1 1 1
-  location 0 1.031 -15.37
+  location 0 0.3844 -16.38
   direction -0.01129 0.01191 0.9999
   cutOffAngle 0.7854
   beamWidth 0.7505
   on TRUE
-  radius 81.07
+  radius 65.55
 }
 DEF BackLight-TIMER TimeSensor { loop TRUE cycleInterval 8.292 },
 DEF BackCamera Viewpoint {
-  position 0 0.9459 -18.53
+  position 0 0.2997 -19.54
   orientation 0 -1 0.00584 -3.14
   fieldOfView 0.6024
   description "BackCamera"
@@ -29,44 +29,44 @@ DEF BackCamera Viewpoint {
 DEF FrontLight SpotLight {
   intensity 1
   color 1 1 1
-  location 0 0.9894 18.79
+  location 0 0.3432 17.78
   direction -0.01839 0.01452 -0.9997
   cutOffAngle 0.7854
   beamWidth 0.7505
   on TRUE
-  radius 81.07
+  radius 65.55
 }
 DEF FrontLight-TIMER TimeSensor { loop TRUE cycleInterval 8.292 },
 DEF LeftLight SpotLight {
   intensity 1
   color 1 1 1
-  location -18.91 1.146 -0.4382
+  location -18.91 0.5002 -1.445
   direction 1 0 -0.006097
   cutOffAngle 0.7854
   beamWidth 0.7505
   on TRUE
-  radius 81.07
+  radius 65.55
 }
 DEF LeftLight-TIMER TimeSensor { loop TRUE cycleInterval 8.292 },
 DEF RightLight SpotLight {
   intensity 1
   color 1 1 1
-  location 19.06 1.044 -0.4252
+  location 19.06 0.3982 -1.432
   direction -1 0 0
   cutOffAngle 0.7854
   beamWidth 0.7505
   on TRUE
-  radius 81.07
+  radius 65.55
 }
 DEF RightLight-TIMER TimeSensor { loop TRUE cycleInterval 8.292 },
 DEF LeftCamera Viewpoint {
-  position -19.94 1.112 -0.4252
+  position -19.94 0.4661 -1.432
   orientation -0.003234 1 -0.003234 -1.571
   fieldOfView 0.6024
   description "LeftCamera"
 }
 DEF RightCamera Viewpoint {
-  position 19.83 1.07 -0.4252
+  position 19.83 0.4238 -1.432
   orientation 0.0008278 -1 -0.0008278 -1.571
   fieldOfView 0.6024
   description "RightCamera"
@@ -74,34 +74,34 @@ DEF RightCamera Viewpoint {
 DEF TopLight SpotLight {
   intensity 1
   color 1 1 1
-  location 0 15.5 -0.2865
+  location 0 14.86 -1.293
   direction 0 -1 -0.004525
   cutOffAngle 0.7854
   beamWidth 0.7505
   on TRUE
-  radius 81.07
+  radius 65.55
 }
 DEF TopLight-TIMER TimeSensor { loop TRUE cycleInterval 8.292 },
 DEF BotLight SpotLight {
   intensity 1
   color 1 1 1
-  location 0 -12.09 -0.3513
+  location 0 -12.73 -1.358
   direction 0 0.9999 0.01339
   cutOffAngle 0.7854
   beamWidth 0.7505
   on TRUE
-  radius 81.07
+  radius 65.55
 }
 DEF BotLight-TIMER TimeSensor { loop TRUE cycleInterval 8.292 },
 DEF TopCamera Viewpoint {
-  position 0 15.44 -0.3513
+  position 0 14.79 -1.358
   orientation 0 -0.7088 -0.7054 -3.142
   fieldOfView 0.6024
   description "TopCamera"
 }
 NavigationInfo { headlight FALSE }
 DEF bottleCap Transform {
-  translation -0.1945 3.526 -0.1217
+  translation -0.1945 2.88 -1.128
   rotation -0.8232 -0.4015 0.4015 -1.764
   scale 0.553 0.553 0.05777
   children [
@@ -2221,7 +2221,7 @@ DEF bottleCap Transform {
   ]
 }
 DEF bottle Transform {
-  translation -3.432 3.548 -2.652
+  translation -3.432 2.902 -3.658
   rotation -0.8232 -0.4015 0.4015 -1.764
   scale 0.5133 0.5133 0.05362
   children [
@@ -5310,7 +5310,7 @@ DEF bottle Transform {
   ]
 }
 DEF liquid Transform {
-  translation -7.264 3.548 -5.645
+  translation -7.264 2.902 -6.652
   rotation -0.8232 -0.4015 0.4015 -1.764
   scale 0.5133 0.5133 0.05362
   children [
@@ -9813,7 +9813,7 @@ DEF liquid Transform {
   ]
 }
 DEF upperLip Transform {
-  translation -1.563 3.559 -1.191
+  translation -1.563 2.913 -2.198
   rotation -0.8232 -0.4015 0.4015 -1.764
   scale 0.5133 0.5133 0.05362
   children [
@@ -11409,7 +11409,7 @@ DEF upperLip Transform {
   ]
 }
 DEF label Transform {
-  translation -5.646 3.548 -4.381
+  translation -5.646 2.902 -5.388
   rotation -0.8232 -0.4015 0.4015 -1.764
   scale 0.5133 0.5133 0.05362
   children [
