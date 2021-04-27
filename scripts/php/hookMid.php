@@ -1,10 +1,10 @@
 <?php
     // Specify the path to the thumbnail images
-    $directory = '../../assets/gallery/gallerypageImages';
+    $directory = '../../assets/gallery/gallerypageImages/columnMid';
     // The .. mean that it gets out of that particular folder in our case if it exit scripts, it will find the gallery images therefore path = ../
 
     //Only load files with the following extentions
-    $allowed_extensions = array('jpg', 'jpeg', 'gif', 'png');
+    $allowed_extensions = array('jpg', 'jpeg', 'gif', 'png', 'PNG');
 
     // An array used to separate the extension from each file
     $file_parts = array();
@@ -33,4 +33,4 @@
     closedir($dir_handle);
     // Return response while removing the last ~ separator
     echo substr_replace($response, "", -1);
-    ?>
+?>

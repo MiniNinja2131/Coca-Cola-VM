@@ -23,6 +23,7 @@
         <script type = "text/javascript" src = "scripts/js/carousel.js"></script>
         <script type = "text/javascript" src = "scripts/js/modelNavigation.js"></script>
         <script type = "text/javascript" src = "scripts/js/modelInteraction.js"></script>
+        <script type = "text/javascript" src = "scripts/js/galleryCreation.js"></script>
 
         <!-- Fancybox (Optional functionality imported) -->
         <script type="text/javascript" src="scripts/fancybox-2.1.7/lib/jquery-1.10.2.min.js"></script>
@@ -183,7 +184,7 @@
                         <div class = "row no-gutters">
                             <div class = "col">
                                 <div class = "card img-narrow">
-                                    <a id = "productImg" href = "jisoo.png" title = "Fanta">
+                                    <a id = "productImg" href = "assets/gallery/gallerypageImages/columnMid/fantaSlanted.png" title = "Fanta">
                                         <img class = "card-img-top img-fluid img-thumbnail" src = "assets/gallery/homepageCarousel/fanta.jpg" alt = "" />
                                     </a>
 
@@ -213,7 +214,7 @@
                             <!-- Schweppes product info at home page -->
                             <div class = "col">
                                 <div class = "card img-narrow">
-                                    <a id = "productImg" href = "jisoo.png" title = "Schweppes">
+                                    <a id = "productImg" href = "#" title = "Schweppes">
                                         <img class = "card-img-top img-fluid img-thumbnail" src = "assets/gallery/homepageCarousel/schweppes.jpg" alt = "" />
                                     </a>
 
@@ -239,7 +240,6 @@
 
                 <!-- Start of References -->
                 <div id = "references" class = "main_contents">
-                    <h1> hi2 </h1>
                 </div> <!-- End of Statement of References -->
 
                 <!-- Start of 3D Model -->
@@ -401,7 +401,21 @@
 
                 <!-- Start of Gallery -->
                 <div id = "gallery" class = "main_contents">
-                    <h1> hi4 </h1>
+                    <div class = "container-fluid">
+                        <div class = "galleryRow">
+                            <div class = "column">
+                                <div class = "galleryImagesLeft" id = "galleryImagesLeft"></div>
+                            </div>
+
+                            <div class = "column">
+                                <div class = "galleryImagesMid" id = "galleryImagesMid"></div>
+                            </div>
+
+                            <div class = "column">
+                                <div class = "galleryImagesRight" id = "galleryImagesRight"></div>
+                            </div>
+                        </div>
+                    </div>                                               
                 </div> <!-- End of Statement of Gallery -->                
 
                 <!-- Start of Footer -->

@@ -18,9 +18,10 @@
 	    function home()
 	    {
             // Get data from the defined model method - model3d_info()
-		    $data = $this->model->model3D_info();
+		    //$data = $this->model->model3D_info();
             // Tell the loader what view to load and which data to use
-		    $this->load->view('viewCocaColaVM', $data);
+		    //$this->load->view('viewCocaColaVM', $data);
+			$this->load->view('viewCocaColaVM');
 	    }
 	}
 ?> 

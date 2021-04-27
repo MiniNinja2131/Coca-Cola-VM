@@ -387,6 +387,15 @@ X3D, x3d {
     
 }
 
+.column {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .column img {
+    filter: grayscale(0) brightness(1);
+  }
+
+
 /*
 #fantaNutritionText{
 	display: none;
@@ -400,6 +409,7 @@ X3D, x3d {
 	display: none;
 }
 */
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px){
 	.wrapper{
@@ -465,6 +475,33 @@ X3D, x3d {
 
 	.footerText{
 		font-size: .9em;
+	}
+	
+	.galleryRow{
+		display: flex;
+		flex-wrap: wrap;
+		padding: 0 4px;
+	}
+
+	/* Create three equal columns that sits next to each other  for the gallery page */
+	.column {
+		flex: 25%;
+		max-width: 33.3%;
+		padding: 0 4px;
+	}
+	
+	.column img {
+		margin-top: 8px;
+		vertical-align: middle;
+		width: 100%;
+		filter: grayscale(1) brightness(0.5);
+		border-radius: 5px;
+		cursor: pointer;
+		transition: 0.3s linear;
+	}
+
+	.column img:hover {
+		filter: grayscale(0);
 	}
 }
 
