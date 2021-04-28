@@ -23,8 +23,9 @@
         <script type = "text/javascript" src = "scripts/js/modelInteraction.js"></script>
         <script type = "text/javascript" src = "scripts/js/galleryCreation.js"></script>
         <script type = "text/javascript" src = "scripts/js/getHomepageData.js"></script>
+        <script type = "text/javascript" src = "scripts/js/getModelpageData.js"></script>
 
-        <!-- Fancybox (Optional functionality imported) -->
+        <!-- Fancybox (Optional functionality imported and experimented) -->
         <script type="text/javascript" src="scripts/fancybox-2.1.7/lib/jquery-1.10.2.min.js"></script>
         <script type="text/javascript" src="scripts/fancybox-2.1.7/source/jquery.fancybox.js"></script>
         <link rel="stylesheet" type="text/css" href="scripts/fancybox-2.1.7/source/jquery.fancybox.css" media="screen">
@@ -67,7 +68,11 @@
                                     </li>
 
                                     <li class = "nav-item">
-                                        <a id = "navReferences" class = "nav-link" href = "#"> References </a>
+                                        <a id = "navReferences" class = "nav-link" href = "assets/reference.zip"> References </a>
+                                    </li>
+
+                                    <li class = "nav-item">
+                                        <a id = "navDeeperLearning" class = "nav-link" href = "#"> Deeper Learning </a>
                                     </li>
                                 </ul>
                             </li>
@@ -228,18 +233,34 @@
                         </div>
                     </div>
 
-                    <div class="iframe-container">
-                        <iframe frameborder = "0" src="https://www.youtube.com/embed/kaS1mp2TWWg?" allowfullscreen> </iframe>
+                    <!-- Youtube advertisement of Coca Cola -->
+                    <div class = "iframe-container">
+                        <div id = "homeYT"></div>
                     </div>
                 </div> <!-- End of Home page -->
 
                 <!-- Start of Statement of Originality -->
                 <div id = "statement" class = "main_contents">
-                    <div id = "statementText"> These web pages are submitted as part requirement for the degree of Candidate number: 185754 at the University of Sussex. They are the product of my own labour except where indicated in the web page content. These web pages or contents may be freely copied and distributed provided the source is acknowledged. </div>
+                    <div id = "statementText"> 
+                        <p>
+                            These web pages are submitted as part requirement for the degree of Candidate number: 185754 at the University of Sussex. 
+                            They are the product of my own labour except where indicated in the web page content. These web pages or contents may be freely 
+                            copied and distributed provided the source is acknowledged.
+                        </p> 
+                    </div>
                 </div> <!-- End of Statement of Originality -->
 
                 <!-- Start of References -->
-                <div id = "references" class = "main_contents">
+                <div id = "deeperLearning" class = "main_contents">
+                    <h3> 1. </h3> <p> My Fanta can model was designed and created using Maya and this can be seen in the reference zip folder when you download it by clicking reference</p> </br>
+                    <h3> 2. </h3> <p> The level of modelling goes beyound what was taught, this can be seen through the fanta can lid where I have created the "pop tab" for the fanta can rather than using a texture to imitate the top of the can</p> </br>
+                    <h3> 3. </h3> <p> The level of bootstrap 4 and Jquery goes beyound what was taught, this can been through the carousel in the homepage and the gallery page and the experimentation of fancybox  (i.e the thumb and buttons used for the modal in the homepage) </p> </br>
+                    <h3> 4. </h3> <p> The workflow was slightly different compared with normally. i.e Using Maya then converting it into fbx file format then importing it and also using xammp to create and test my work since public_html refuses to create the database for me</U></p> </br>
+                    <h3> 5. </h3> <p> Linked my Github account and you can see the different commits that i have done, this can be seen by clicking on the github icon on the navigation tab</p> </br>
+                    <h3> 6. </h3> <p> The MVC model were altered and goes beyound what was taught since my database can hold data from different pages in the website and this is demonstrated through the home and model page where i fetch and retrieve them using technology like json and ajxax (call index.php/createDB then index.php/dbRead then index.php and all information should be loaded for all the pages)</p> </br>
+                    <h3> Error/Bug? </h3> <p> There seem to be a bug when im trying to convert my 3D model to a x3d format where it doesnt copy exactly like it should (When you change the model into wireframe mode, the model becomes weird and i can assure you that it does not happen in 3DS max and of course you can check it yourself in 3DS max, the file could be found in the zip file from reference tab)</p> </br>
+                    <h3> Noticeable mention </h3> <p> Obviously i could of created another table for both the statement page and deeper learning and using ajax and json to fetch and retrieve information from the back-end to the front but i think i have demonstrated my knowledge through the homepage and model page which is why i manually typed this here since it would be faster to do </p> </br>
+                    <h3> Noticeable mention </h3> <p> In addition to this, the gallery contains three columns which dynamically changes depending on the original size of the image and you could test it out by adding a image of your own if you want but you can see a small demonstration through the left column and the middle where the images in the middle column are smaller</p> </br>
                 </div> <!-- End of Statement of References -->
 
                 <!-- Start of 3D Model -->
@@ -295,9 +316,9 @@
                                         </scene>
                                     </x3d>
                                 </div>
-                                <div id = "x3dCreationMethodFanta" class = "card-text drinksText"> This X3D model of the Fanta can has been created in Maya, imported to 3DS max and then exported to VRML97 and converted, using the instantreality transcoders, to X3D for display online </div>
-                                <div id = "x3dCreationMethodOasis" class = "card-text drinksText"> This X3D model of the Oasis bottle has been created in 3DS Max, exported to VRML97 and converted, using the instantreality transcoders, to X3D for display online </div>
-                                <div id = "x3dCreationMethodSchweppes" class = "card-text drinksText"> This X3D model of the Schweppes bottle has been created in 3DS Max, exported to VRML97 and converted, using the instantreality transcoders, to X3D for display online </div>
+                                <div id = "x3dCreationMethodFanta" class = "card-text drinksText"></div>
+                                <div id = "x3dCreationMethodOasis" class = "card-text drinksText"></div>
+                                <div id = "x3dCreationMethodSchweppes" class = "card-text drinksText"></div>
                             </div>
                         </div>
                     </div>
@@ -318,74 +339,22 @@
                                 <!-- Nutrious data for each drink (fanta, oasis, schweppes)-->
                                 <div class = "card-body">
                                     <div id = "fantaNutritionText">
-                                        <div class = "card-title nutritionFantaTitle drinksText"> <h2>Fanta</h2> </div>
-                                        <div class = "card-subtitle nutritionFantaSubtitle drinksText"> <Strong><p><Strong> Information </Strong> per 100mL <br> 
-                                            <Strong> Energy </Strong> 81kJ/19kcal <br/>
-                                            <Strong> Fat </Strong> 0g <br/>
-                                            Of which 0g <br/>
-                                            saturates <br/>
-
-                                            <Strong> Carbohydrate </Strong> 4.6g <br/>
-                                            Of which 4.6g <br/>
-                                            sugars <br/>
-
-                                            <Strong>Protein </Strong> 0g <br/>
-
-                                            <Strong> Salt </Strong> 0g <br/></p></Strong>
-                                        </div>
-
-                                        <div class = "card-text nutritionFantaDescription drinksText"> <h2> Ingredients </h2> <p> 
-                                            Carbonated Water, Sugar, Orange Juice from Concentrate (3.7%), 
-                                            Citrus Fruit from Concentrate (1.3%), Citric Acid, Vegetable Extracts (Carrot, Pumpkin), 
-                                            Sweeteners (Acesulfame K, Sucralose), Preservative (Potassium Sorbate), Malic Acid, 
-                                            Acidity Regulator (Sodium Citrate), Stabiliser (Guar Gum), Natural Orange Flavourings 
-                                            with Other Natural Flavourings, Antioxidant (Ascorbic Acid).</p>
-                                        </div>
+                                        <div class = "card-title nutritionFantaTitle drinksText"></div>
+                                        <!-- Fetch information from database -->
+                                        <div class = "card-subtitle nutritionFantaSubtitle drinksText"></div>
+                                        <div class = "card-text nutritionFantaDescription drinksText"></div>
                                     </div>
 
                                     <div id = "oasisNutritionText">
-                                        <div class = "card-title nutritionOasisTitle drinksText"> <h2> Oasis Summer Fruits </h2> </div>
-                                        <div class = "card-subtitle nutritionOasisSubtitle drinksText"> <Strong><p><Strong> Information </Strong> per 100ml <br> 
-                                            <Strong> Energy </Strong> 74kJ/17kcal <br/>
-                                            <Strong> Fat </Strong> 0g <br/>
-                                            Of which 0g <br/>
-                                            saturates <br/>
-                                        
-                                            <Strong> Carbohydrate </Strong> 4.1g <br/>
-                                            Of which 4.1g <br/>
-                                            sugars <br/>
-                                    
-                                            <Strong>Protein </Strong> 0g <br/>
-                                            <Strong> Salt </Strong> 0.08g <br/></p></Strong>
-                                        </div>
-
-                                        <div class = "card-text nutritionOasisDescription drinksText"> <h2> Ingredients </h2> <p> 
-                                            Water, Sugar, Fruit Juices From Concentrates 5% (Apple 1.7%, Strawberry 1.5%, Redcurrant 1.2%, Cherry 0.6%), 
-                                            Citric Acid, Natural Berry Flavouring with Other Natural Flavourings, Fruit and Vegetable Concentrates 
-                                            (Blueberry, Blackcurrant, Carrot, Apple, Hibiscus), Stabiliser (Polyphosphates), Acidity Regulator (Sodium Citrate), 
-                                            Preservatives (Potassium Sorbate, Sodium Benzoate), Sweeteners (Aspartame, Acesulfame K). Contains a Source of Phenylalanine.</p> 
-                                        </div>
+                                        <div class = "card-title nutritionOasisTitle drinksText"></div>
+                                        <div class = "card-subtitle nutritionOasisSubtitle drinksText"></div>
+                                        <div class = "card-text nutritionOasisDescription drinksText"></div>
                                     </div>
 
                                     <div id = "schweppesNutritionText">
-                                        <div class = "card-title nutritionSchweppesTitle drinksText"> <h2> Schweppes Indian Tonic Water </h2> </div>
-                                        <div class = "card-subtitle nutritionSchweppesSubtitle drinksText"> <Strong><p><Strong> Information </Strong> per 100ml <br> 
-                                            <Strong> Energy </Strong> 89kJ/21kcal <br/>
-                                            <Strong> Fat </Strong> 0g <br/>
-                                            Of which 0g <br/>
-                                            saturates <br/>
-                                        
-                                            <Strong> Carbohydrate </Strong> 4.9g <br/>
-                                            Of which 4.9g <br/>
-                                            sugars <br/>
-                                    
-                                            <Strong>Protein </Strong> 0g <br/>
-                                            <Strong> Salt </Strong> 0g <br/></p></Strong> 
-                                        </div>
-
-                                        <div class = "card-text nutritionSchweppesDescription drinksText"> <h2> Ingredients </h2> <p> 
-                                            Carbonated Water, Sugar, Citric Acid, Flavourings Including Quinine, Sweetener (Sodium Saccharin)</p> 
-                                        </div>
+                                        <div class = "card-title nutritionSchweppesTitle drinksText"></div>
+                                        <div class = "card-subtitle nutritionSchweppesSubtitle drinksText"></div>
+                                        <div class = "card-text nutritionSchweppesDescription drinksText"></div>
                                     </div>
                                 </div>
                             </div>
@@ -393,7 +362,9 @@
 
                         <div class = "col-sm-8">
                             <div class="iframe-container">
-                                <iframe frameborder = "0" src="https://www.youtube.com/embed/kaS1mp2TWWg?" allowfullscreen> </iframe>
+                                <div id = "fantaYT"></div>
+                                <div id = "oasisYT"></div>
+                                <div id = "schweppesYT"></div>
                             </div>
                         </div>
                     </div>

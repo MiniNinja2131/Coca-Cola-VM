@@ -12,14 +12,14 @@ function selectPage() {
     /* Home page */
 	$('#home').show();
     $('#statement').hide();
-    $('#references').hide();
+    $('#deeperLearning').hide();
 	$('#model').hide();
     $('#gallery').hide();
 
 	$('#navHome').click(function(){
         $('#home').show();
         $('#statement').hide();
-        $('#references').hide();
+        $('#deeperLearning').hide();
         $('#model').hide();
         $('#gallery').hide();	  
 	});
@@ -27,15 +27,15 @@ function selectPage() {
 	$('#navStatement').click(function(){
         $('#home').hide();
         $('#statement').show();
-        $('#references').hide();
+        $('#deeperLearning').hide();
         $('#model').hide();
         $('#gallery').hide();	  
 	});
 
-    $('#navReferences').click(function(){
+    $('#navDeeperLearning').click(function(){
         $('#home').hide();
         $('#statement').hide();
-        $('#references').show();
+        $('#deeperLearning').show();
         $('#model').hide();
         $('#gallery').hide();	  
 	});
@@ -43,7 +43,7 @@ function selectPage() {
     $('#navModel').click(function(){
         $('#home').hide()
         $('#statement').hide();
-        $('#references').hide();
+        $('#deeperLearning').hide();
         $('#model').show();
         $("#x3dModelTitleFanta").show();
         $("#x3dModelTitleOasis").hide();
@@ -56,13 +56,16 @@ function selectPage() {
         $("#fantaNutritionText").show();
         $("#oasisNutritionText").hide();
         $("#schweppesNutritionText").hide();
+        $('#fantaYT').show();
+        $('#oasisYT').hide();
+        $('#schweppesYT').hide();
         $('#gallery').hide();
 	});
 
     $('#navGallery').click(function(){
         $('#home').hide()
         $('#statement').hide();
-        $('#references').hide();
+        $('#deeperLearning').hide();
         $('#model').hide();
         $('#gallery').show();	  
 	});
@@ -70,7 +73,7 @@ function selectPage() {
     $('#toFantaModel').click(function(){
         $('#home').hide()
         $('#statement').hide();
-        $('#references').hide();
+        $('#deeperLearning').hide();
         $('#model').show();
         fantaScene();
         $("#x3dModelTitleFanta").show();
@@ -90,7 +93,7 @@ function selectPage() {
     $('#toOasisModel').click(function(){
         $('#home').hide()
         $('#statement').hide();
-        $('#references').hide();
+        $('#deeperLearning').hide();
         $('#model').show();
         oasisScene();
         $("#x3dModelTitleFanta").hide();
@@ -110,7 +113,7 @@ function selectPage() {
     $('#toSchweppesModel').click(function(){
         $('#home').hide()
         $('#statement').hide();
-        $('#references').hide();
+        $('#deeperLearning').hide();
         $('#model').show();
         schweppesScene();
         $("#x3dModelTitleFanta").hide()
@@ -141,6 +144,10 @@ function fantaDescription(){
         $("#fantaNutritionText").show();
         $("#oasisNutritionText").hide();
         $("#schweppesNutritionText").hide();
+
+        $('#fantaYT').show();
+        $('#oasisYT').hide();
+        $('#schweppesYT').hide();
     }); 
 }
 
@@ -157,6 +164,10 @@ function oasisDescription(){
         $("#fantaNutritionText").hide();
         $("#oasisNutritionText").show();
         $("#schweppesNutritionText").hide();
+
+        $('#fantaYT').hide();
+        $('#oasisYT').show();
+        $('#schweppesYT').hide();
     }); 
 }
 
@@ -173,5 +184,9 @@ function schweppesDescription(){
         $("#fantaNutritionText").hide();
         $("#oasisNutritionText").hide();
         $("#schweppesNutritionText").show();
+
+        $('#fantaYT').hide();
+        $('#oasisYT').hide();
+        $('#schweppesYT').show();
     }); 
 }
