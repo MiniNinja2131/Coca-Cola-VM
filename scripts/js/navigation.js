@@ -57,7 +57,6 @@ function selectPage() {
         $("#oasisNutritionText").hide();
         $("#schweppesNutritionText").hide();
         $('#gallery').hide();
-
 	});
 
     $('#navGallery').click(function(){
@@ -67,6 +66,66 @@ function selectPage() {
         $('#model').hide();
         $('#gallery').show();	  
 	});
+
+    $('#toFantaModel').click(function(){
+        $('#home').hide()
+        $('#statement').hide();
+        $('#references').hide();
+        $('#model').show();
+        fantaScene();
+        $("#x3dModelTitleFanta").show();
+        $("#x3dModelTitleOasis").hide();
+        $("#x3dModelTitleSchweppes").hide();
+
+        $("#x3dCreationMethodFanta").show();
+        $("#x3dCreationMethodOasis").hide();
+        $("#x3dCreationMethodSchweppes").hide();
+
+        $("#fantaNutritionText").show();
+        $("#oasisNutritionText").hide();
+        $("#schweppesNutritionText").hide();
+        $('#gallery').hide();
+    });
+
+    $('#toOasisModel').click(function(){
+        $('#home').hide()
+        $('#statement').hide();
+        $('#references').hide();
+        $('#model').show();
+        oasisScene();
+        $("#x3dModelTitleFanta").hide();
+        $("#x3dModelTitleOasis").show();
+        $("#x3dModelTitleSchweppes").hide();
+
+        $("#x3dCreationMethodFanta").hide();
+        $("#x3dCreationMethodOasis").show();
+        $("#x3dCreationMethodSchweppes").hide();
+
+        $("#fantaNutritionText").hide();
+        $("#oasisNutritionText").show();
+        $("#schweppesNutritionText").hide();
+        $('#gallery').hide();
+    });
+
+    $('#toSchweppesModel').click(function(){
+        $('#home').hide()
+        $('#statement').hide();
+        $('#references').hide();
+        $('#model').show();
+        schweppesScene();
+        $("#x3dModelTitleFanta").hide()
+        $("#x3dModelTitleOasis").hide();
+        $("#x3dModelTitleSchweppes").show();
+
+        $("#x3dCreationMethodFanta").hide();
+        $("#x3dCreationMethodOasis").hide();
+        $("#x3dCreationMethodSchweppes").show();
+
+        $("#fantaNutritionText").hide();
+        $("#oasisNutritionText").hide();
+        $("#schweppesNutritionText").show();
+        $('#gallery').hide();
+    });
 }
 
 function fantaDescription(){

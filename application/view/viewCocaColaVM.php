@@ -9,9 +9,7 @@
         <link rel = "stylesheet" href="scripts/css/style.css">
         <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!-- Icons -->
-
         <link rel = "stylesheet" type = "text/css" href = "scripts/css/x3dom.css">
-
         <!-- JavaScript/Scripts -->
         <script type = "text/javascript" src = "scripts/js/x3dom.js"></script>
         <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -24,6 +22,7 @@
         <script type = "text/javascript" src = "scripts/js/modelNavigation.js"></script>
         <script type = "text/javascript" src = "scripts/js/modelInteraction.js"></script>
         <script type = "text/javascript" src = "scripts/js/galleryCreation.js"></script>
+        <script type = "text/javascript" src = "scripts/js/getHomepageData.js"></script>
 
         <!-- Fancybox (Optional functionality imported) -->
         <script type="text/javascript" src="scripts/fancybox-2.1.7/lib/jquery-1.10.2.min.js"></script>
@@ -89,6 +88,7 @@
                             <a href = "https://www.facebook.com/cocacolaGB/"> <i class = "socialMediaIcon fab fa-facebook-square"></i></a>
                             <a href = "https://www.youtube.com/channel/UCMGIUY-GcVFSovaHUKUmdug"> <i class = "socialMediaIcon fab fa-youtube-square"></i></a>
                             <a href = "https://www.instagram.com/cocacolaeu/?hl=en"> <i class = "socialMediaIcon fab fa-instagram-square"></i></a>
+                            <a href = "#"> <i class = "socialMediaIcon fab fa-github-square"></i></a>
                         </div>
                     </nav>
 
@@ -184,14 +184,14 @@
                         <div class = "row no-gutters">
                             <div class = "col">
                                 <div class = "card img-narrow">
-                                    <a id = "productImg" href = "assets/gallery/gallerypageImages/columnMid/fantaSlanted.png" title = "Fanta">
+                                    <a id = "productImg" href = "assets/gallery/gallerypageImages/columnLeft/fantaSlanted.png" title = "Fanta Model">
                                         <img class = "card-img-top img-fluid img-thumbnail" src = "assets/gallery/homepageCarousel/fanta.jpg" alt = "" />
                                     </a>
 
                                     <div class = "card-body">
-                                        <div id = "homeTitleLeft" class = "card-title productText"> Fanta </div>
-                                        <div id = "homeDescriptionLeft" class = "card-subtitle productText"> Bright, bubbly, instantly refreshing and great tasting. Fanta Orange is made with 100% natural flavours, fruit juice and is caffeine free. </div>
-                                        <div id = "toFantaModel" class = "btn btn-primary btn-responsive"> Find out more </div>
+                                        <div id = "homeTitleLeft" class = "card-title productText"></div>
+                                        <div id = "homeDescriptionLeft" class = "card-subtitle productText"></div>
+                                        <div id = "toFantaModel" onclick = "fantaScene();" class = "btn btn-primary btn-responsive"></div>
                                     </div>
                                 </div>
                             </div>  
@@ -199,14 +199,14 @@
                             <!-- Oasis product info at home page -->
                             <div class = "col">
                                 <div class = "card img-narrow">
-                                    <a id = "productImg" href = "#" title = "Oasis">
+                                    <a id = "productImg" href = "assets/gallery/gallerypageImages/columnLeft/oasisSlanted.png" title = "Oasis Model">
                                         <img class = "card-img-top img-fluid img-thumbnail" src = "assets/gallery/homepageCarousel/oasis.jpg" alt = "" />
                                     </a>
 
                                     <div class = "card-body">
-                                        <div id = "homeTitleCenter" class = "card-title productText"> Oasis Summer Fruits </div>
-                                        <div id = "homeDescriptionCenter" class = "card-subtitle productText"> The UK's number one on-the-go juice drink, this time with your favourite summer fruits. </div>
-                                        <div id = "toOasisModel" class = "btn btn-primary btn-responsive"> Find out more </div>
+                                        <div id = "homeTitleCenter" class = "card-title productText"></div>
+                                        <div id = "homeDescriptionCenter" class = "card-subtitle productText"></div>
+                                        <div id = "toOasisModel" class = "btn btn-primary btn-responsive"></div>
                                     </div>
                                 </div>
                             </div>
@@ -214,14 +214,14 @@
                             <!-- Schweppes product info at home page -->
                             <div class = "col">
                                 <div class = "card img-narrow">
-                                    <a id = "productImg" href = "#" title = "Schweppes">
+                                    <a id = "productImg" href = "assets/gallery/gallerypageImages/columnRight/schweppesSlanted.png" title = "Schweppes Model">
                                         <img class = "card-img-top img-fluid img-thumbnail" src = "assets/gallery/homepageCarousel/schweppes.jpg" alt = "" />
                                     </a>
 
                                     <div class = "card-body">
-                                        <div id = "homeTitleRight" class = "card-title productText"> Schweppes Indian Tonic Water </div>
-                                        <div id = "homeDescriptionRight" class = "card-subtitle productText"> The classic mixer full of effervescence and quinine. Perfect for pairing with your favourite gin for a crisp, refreshing G&T. </div>
-                                        <div id = "toSchweppesModel" class = "btn btn-primary btn-responsive"> Find out more </div>
+                                        <div id = "homeTitleRight" class = "card-title productText"></div>
+                                        <div id = "homeDescriptionRight" class = "card-subtitle productText"></div>
+                                        <div id = "toSchweppesModel" class = "btn btn-primary btn-responsive"></div>
                                     </div>
                                 </div>
                             </div>

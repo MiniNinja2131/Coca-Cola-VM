@@ -15,13 +15,31 @@
 	    }
 		
         // Home page function
-	    function home()
-	    {
-            // Get data from the defined model method - model3d_info()
-		    //$data = $this->model->model3D_info();
-            // Tell the loader what view to load and which data to use
-		    //$this->load->view('viewCocaColaVM', $data);
+	    function home(){
 			$this->load->view('viewCocaColaVM');
 	    }
+
+		function getModelsJSON()
+		{
+			$data = $this->model->dbRead();
+			echo json_encode($data);
+		}
+		
+		function dbCreate()
+		{
+			$data = $this->model->dbCreate();
+			$this->load->view('viewMessage', $data);
+		}
+		
+		function dbRead()
+		{
+			$this->load->view('viewMessage', $this->getModelsJSON());
+		}
+		
+		function dbDelete()
+		{
+			$data = $this->model->dbDelete();
+			$this->load->view('viewMessage', $data);
+		}
 	}
 ?> 
