@@ -271,7 +271,8 @@
                                 <li class = "nav-item">
                                     <a id = "navCoke" class = "nav-link active" href = "#"> X3D Models </a>
                                 </li>
-
+                                
+                                <!-- Camera control -->
                                 <li class = "nav-item dropdown">
                                     <a class = "nav-link dropdown-toggle" href = "#" id = "navbardrop" data-toggle = "dropdown"> Viewport </a>
                                     <div class = "dropdown-menu">
@@ -285,6 +286,23 @@
 
                                 <li class = "nav-item">
                                     <a id = "navCoke" class = "nav-link" href = "#" onclick = "wireFrame();"> Wireframe Mode </a>
+                                </li>
+
+                                <!-- Animation/Spin -->
+                                <li class = "nav-item dropdown">
+                                    <a class = "nav-link dropdown-toggle" href = "#" id = "navbardrop" data-toggle = "dropdown"> Animation </a>
+                                    <div class = "dropdown-menu">
+                                        <a class="dropdown-item" href = "#" onclick = "spin();"> Rotate model </a>
+                                        <a class = "dropdown-item" href = "#" onclick = "stopRotation();"> Stop rotation </a>
+                                    </div>
+                                </li>
+
+                                <!-- Lighting -->
+                                <li class = "nav-item dropdown">
+                                    <a class = "nav-link dropdown-toggle" href = "#" id = "navbardrop" data-toggle = "dropdown"> Lighting </a>
+                                    <div class = "dropdown-menu">
+                                        <a class="dropdown-item" href = "#" onclick = "light();"> Turn Omi-Lights On/Off </a>
+                                    </div>
                                 </li>
                             </ul>
                         </div>
@@ -310,12 +328,13 @@
                                                     <inline render = "true" bboxcenter = "0,0,0" bboxsize = "-1,-1,-1" load = "true" nameSpaceName = "model" mapDEFToID = "true" onclick = "animateModel();" url = "assets/OasisModel/x3d/oasisModel.x3d"></inline>
                                                 </transform>
                                                 <transform>
-                                                    <inline render = "true" bboxcenter = "30,30,0" bboxsize = "-1,-1,-1" load = "true" nameSpaceName = "model" mapDEFToID = "true" onclick = "animateModel();" url = "assets/SchweppesModel/x3d/schweppesModel.x3d"></inline>
+                                                    <inline render = "true" bboxcenter = "30,30,30" bboxsize = "-1,-1,-1" load = "true" nameSpaceName = "model" mapDEFToID = "true" onclick = "animateModel();" url = "assets/SchweppesModel/x3d/schweppesModel.x3d"></inline>
                                                 </transform>
                                             </Switch>
                                         </scene>
                                     </x3d>
                                 </div>
+                                <!-- Data retrieve from the back-end to the front via ajax and json -->
                                 <div id = "x3dCreationMethodFanta" class = "card-text drinksText"></div>
                                 <div id = "x3dCreationMethodOasis" class = "card-text drinksText"></div>
                                 <div id = "x3dCreationMethodSchweppes" class = "card-text drinksText"></div>
@@ -323,7 +342,7 @@
                         </div>
                     </div>
 
-                    <!-- Hold the nutritional value of each drink and the advertisement -->
+                    <!-- Hold the nutritional value of each drink and the advertisement video -->
                     <div class = "row">
                         <!-- Text regarding the nutrition value of the drinks -->
                         <div class = "col-sm-4">
@@ -397,7 +416,7 @@
                         </div>
 
                         <div class = "navbar-text float-right copyright">
-                            <p class = "footerText"><span class = "footerText align-baseline"> &copy 2021 3D Apps Assignment | <a href = "javascript:changeLook()"> Restyle </a> | <a href = "javascript:changeBack()"> Reset </a></span></p>
+                            <p class = "footerText"><span class = "footerText align-baseline"> &copy 2021 3D Apps Assignment </span></p>
                         </div>
                     </div>
                 </nav> <!-- End of Footer -->

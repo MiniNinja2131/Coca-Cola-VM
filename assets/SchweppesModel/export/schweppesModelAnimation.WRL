@@ -1,7 +1,7 @@
 #VRML V2.0 utf8
 
 # Produced by 3D Studio MAX VRML97 exporter, Version 21, Revision 8.45
-# MAX File: fantaComplete2.max, Date: Fri Apr 30 11:49:02 2021
+# MAX File: fantaComplete2.max, Date: Fri Apr 30 11:45:01 2021
 
 DEF FrontCamera Viewpoint {
   position -0.02133 0.04606 14.67
@@ -38,42 +38,42 @@ DEF BackLight PointLight {
   color 1 1 1
   location 0 0.044 -10.08
   on TRUE
-  radius 44.56
+  radius 45.23
 }
 DEF FrontLight PointLight {
   intensity 0.001
   color 1 1 1
   location 0 0.044 10.05
   on TRUE
-  radius 44.56
+  radius 45.23
 }
 DEF LeftLight PointLight {
   intensity 0.001
   color 1 1 1
   location -11.75 0 0.0592
   on TRUE
-  radius 44.56
+  radius 45.23
 }
 DEF RightLight PointLight {
   intensity 0.001
   color 1 1 1
   location 11.55 0 0.0592
   on TRUE
-  radius 44.56
+  radius 45.23
 }
 DEF TopLight PointLight {
   intensity 0.001
   color 1 1 1
   location 0 8.115 0.04315
   on TRUE
-  radius 44.56
+  radius 45.23
 }
 DEF BotLight PointLight {
   intensity 0.001
   color 1 1 1
   location 0 -5.255 0.06368
   on TRUE
-  radius 44.56
+  radius 45.23
 }
 NavigationInfo { headlight FALSE }
 DEF canTop Transform {
