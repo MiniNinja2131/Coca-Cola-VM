@@ -35,3 +35,75 @@ function wireFrame()
 	e.runtime.togglePoints(true);
 	e.runtime.togglePoints(true);
 }
+
+var spinning = false;
+
+function spin(){
+	spinning = !spinning;
+	document.getElementById('model__canPin-TIMER').setAttribute('enabled', spinning.toString());
+	document.getElementById('model__canTop-TIMER').setAttribute('enabled', spinning.toString());
+
+	document.getElementById('model__shellBottle-TIMER').setAttribute('enabled', spinning.toString());
+	document.getElementById('model__labelAndCap-TIMER').setAttribute('enabled', spinning.toString());
+	document.getElementById('model__liquid-TIMER').setAttribute('enabled', spinning.toString());
+
+	document.getElementById('model__upperLip-TIMER').setAttribute('enabled', spinning.toString());
+	document.getElementById('model__label-TIMER').setAttribute('enabled', spinning.toString());
+	document.getElementById('model__liquid2-TIMER').setAttribute('enabled', spinning.toString());
+	document.getElementById('model__bottleCap-TIMER').setAttribute('enabled', spinning.toString());
+	document.getElementById('model__bottle-TIMER').setAttribute('enabled', spinning.toString());
+}
+
+function stopRotation(){
+	spinning = false;
+	document.getElementById('model__canPin-TIMER').setAttribute('enabled', spinning.toString());
+	document.getElementById('model__canTop-TIMER').setAttribute('enabled', spinning.toString());
+
+	document.getElementById('model__shellBottle-TIMER').setAttribute('enabled', spinning.toString());
+	document.getElementById('model__labelAndCap-TIMER').setAttribute('enabled', spinning.toString());
+	document.getElementById('model__liquid-TIMER').setAttribute('enabled', spinning.toString());
+
+	document.getElementById('model__upperLip-TIMER').setAttribute('enabled', spinning.toString());
+	document.getElementById('model__label-TIMER').setAttribute('enabled', spinning.toString());
+	document.getElementById('model__bottleCap-TIMER').setAttribute('enabled', spinning.toString());
+	document.getElementById('model__liquid2-TIMER').setAttribute('enabled', spinning.toString());
+	document.getElementById('model__bottle-TIMER').setAttribute('enabled', spinning.toString());
+}
+
+function animateModel()
+{
+    if(document.getElementById('model__animationCam-TIMER').getAttribute('enabled')!= 'true')
+        document.getElementById('model__animationCam-TIMER').setAttribute('enabled', 'true');
+    else
+        document.getElementById('model__animationCam-TIMER').setAttribute('enabled', 'false');
+}
+
+var lightOn = true;
+function light()
+{
+
+	lightOn = !lightOn;
+	document.getElementById('model__TopLight').setAttribute('on', lightOn.toString());
+	document.getElementById('model__LeftLight').setAttribute('on', lightOn.toString());
+	document.getElementById('model__RightLight').setAttribute('on', lightOn.toString());
+	document.getElementById('model__FrontLight').setAttribute('on', lightOn.toString());
+	document.getElementById('model__BackLight').setAttribute('on', lightOn.toString());
+	document.getElementById('model__BotLight').setAttribute('on', lightOn.toString());
+	console.log(lightOn);
+}
+
+
+/*var lightOn = true;
+function light()
+{
+	lightOn = !lightOn;
+	document.getElementById('model__TopLight').setAttribute('on', lightOn.toString());
+	document.getElementById('model__LeftLight').setAttribute('on', lightOn.toString());
+	document.getElementById('model__RightLight').setAttribute('on', lightOn.toString());
+	document.getElementById('model__FrontLight').setAttribute('on', lightOn.toString());
+	document.getElementById('model__BackLight').setAttribute('on', lightOn.toString());
+	document.getElementById('model__BotLight').setAttribute('on', lightOn.toString());
+	console.log(lightOn);
+}*/
+
+
