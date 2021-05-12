@@ -81,7 +81,6 @@ function animateModel()
 var lightOn = true;
 function light()
 {
-
 	lightOn = !lightOn;
 	document.getElementById('model__TopLight').setAttribute('on', lightOn.toString());
 	document.getElementById('model__LeftLight').setAttribute('on', lightOn.toString());
@@ -91,19 +90,3 @@ function light()
 	document.getElementById('model__BotLight').setAttribute('on', lightOn.toString());
 	console.log(lightOn);
 }
-
-
-/*var lightOn = true;
-function light()
-{
-	lightOn = !lightOn;
-	document.getElementById('model__TopLight').setAttribute('on', lightOn.toString());
-	document.getElementById('model__LeftLight').setAttribute('on', lightOn.toString());
-	document.getElementById('model__RightLight').setAttribute('on', lightOn.toString());
-	document.getElementById('model__FrontLight').setAttribute('on', lightOn.toString());
-	document.getElementById('model__BackLight').setAttribute('on', lightOn.toString());
-	document.getElementById('model__BotLight').setAttribute('on', lightOn.toString());
-	console.log(lightOn);
-}*/
-
-
