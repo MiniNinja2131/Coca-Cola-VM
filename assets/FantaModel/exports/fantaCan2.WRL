@@ -1,7 +1,7 @@
 #VRML V2.0 utf8
 
 # Produced by 3D Studio MAX VRML97 exporter, Version 21, Revision 8.45
-# MAX File: fantaComplete2.max, Date: Fri Apr 30 11:49:02 2021
+# MAX File: fantaComplete2.max, Date: Wed May 12 11:57:03 2021
 
 DEF FrontCamera Viewpoint {
   position -0.02133 0.04606 14.67
@@ -9,6 +9,7 @@ DEF FrontCamera Viewpoint {
   fieldOfView 0.6024
   description "FrontCamera"
 }
+DEF FrontCamera-TIMER TimeSensor { loop TRUE cycleInterval 3.333 },
 DEF LeftCamera Viewpoint {
   position -15.56 0.04606 -0.008312
   orientation 0 1 0 -1.57
@@ -27,53 +28,55 @@ DEF BackCamera Viewpoint {
   fieldOfView 0.6024
   description "BackCamera"
 }
+DEF BackCamera-TIMER TimeSensor { loop TRUE cycleInterval 3.333 },
 DEF TopCamera Viewpoint {
   position 0 5.127 0.05129
   orientation 1 0 0 -1.566
   fieldOfView 0.6024
   description "TopCamera"
 }
+DEF TopCamera-TIMER TimeSensor { loop TRUE cycleInterval 3.333 },
 DEF BackLight PointLight {
   intensity 0.001
   color 1 1 1
   location 0 0.044 -10.08
   on TRUE
-  radius 44.56
+  radius 46.13
 }
 DEF FrontLight PointLight {
   intensity 0.001
   color 1 1 1
   location 0 0.044 10.05
   on TRUE
-  radius 44.56
+  radius 46.13
 }
 DEF LeftLight PointLight {
   intensity 0.001
   color 1 1 1
   location -11.75 0 0.0592
   on TRUE
-  radius 44.56
+  radius 46.13
 }
 DEF RightLight PointLight {
   intensity 0.001
   color 1 1 1
   location 11.55 0 0.0592
   on TRUE
-  radius 44.56
+  radius 46.13
 }
 DEF TopLight PointLight {
   intensity 0.001
   color 1 1 1
   location 0 8.115 0.04315
   on TRUE
-  radius 44.56
+  radius 46.13
 }
 DEF BotLight PointLight {
   intensity 0.001
   color 1 1 1
   location 0 -5.255 0.06368
   on TRUE
-  radius 44.56
+  radius 46.13
 }
 NavigationInfo { headlight FALSE }
 DEF canTop Transform {
