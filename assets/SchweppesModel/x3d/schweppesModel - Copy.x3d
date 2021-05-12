@@ -2,6 +2,24 @@
 <!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.0//EN" "http://www.web3d.org/specifications/x3d-3.0.dtd">
 <X3D xmlns:xsd='http://www.w3.org/2001/XMLSchema-instance' profile='Full' version='3.0' xsd:noNamespaceSchemaLocation='http://www.web3d.org/specifications/x3d-3.0.xsd'>
   <Scene DEF='scene'>
+    <Viewpoint DEF='FrontCamera' description='FrontCamera' orientation='0 1 0 -0.008645' position='-0.1296 0.5002 19.02' fieldOfView='0.6024'/>
+    <SpotLight DEF='BackLight' beamWidth='0.7505' cutOffAngle='0.7854' direction='-0.01129 0.01191 0.9999' location='0 0.3844 -16.38' radius='63.71'/>
+    <TimeSensor DEF='BackLight-TIMER' cycleInterval='4.125' loop='true'/>
+    <Viewpoint DEF='BackCamera' description='BackCamera' orientation='0 -1 0.00584 -3.14' position='0 0.2997 -19.54' fieldOfView='0.6024'/>
+    <SpotLight DEF='FrontLight' beamWidth='0.7505' cutOffAngle='0.7854' direction='-0.01839 0.01452 -0.9997' location='0 0.3432 17.78' radius='63.71'/>
+    <TimeSensor DEF='FrontLight-TIMER' cycleInterval='4.125' loop='true'/>
+    <SpotLight DEF='LeftLight' beamWidth='0.7505' cutOffAngle='0.7854' direction='1 0 -0.006097' location='-18.91 0.5002 -1.445' radius='63.71'/>
+    <TimeSensor DEF='LeftLight-TIMER' cycleInterval='4.125' loop='true'/>
+    <SpotLight DEF='RightLight' beamWidth='0.7505' cutOffAngle='0.7854' direction='-1 0 0' location='19.06 0.3982 -1.432' radius='63.71'/>
+    <TimeSensor DEF='RightLight-TIMER' cycleInterval='4.125' loop='true'/>
+    <Viewpoint DEF='LeftCamera' description='LeftCamera' orientation='-0.003234 1 -0.003234 -1.571' position='-19.94 0.4661 -1.432' fieldOfView='0.6024'/>
+    <Viewpoint DEF='RightCamera' description='RightCamera' orientation='0.0008278 -1 -0.0008278 -1.571' position='19.83 0.4238 -1.432' fieldOfView='0.6024'/>
+    <SpotLight DEF='TopLight' beamWidth='0.7505' cutOffAngle='0.7854' direction='0 -1 -0.004525' location='0 14.86 -1.293' radius='63.71'/>
+    <TimeSensor DEF='TopLight-TIMER' cycleInterval='4.125' loop='true'/>
+    <SpotLight DEF='BotLight' beamWidth='0.7505' cutOffAngle='0.7854' direction='0 0.9999 0.01339' location='0 -12.73 -1.358' radius='63.71'/>
+    <TimeSensor DEF='BotLight-TIMER' cycleInterval='4.125' loop='true'/>
+    <Viewpoint DEF='TopCamera' description='TopCamera' orientation='0 -0.7088 -0.7054 -3.142' position='0 14.79 -1.358' fieldOfView='0.6024'/>
+    <NavigationInfo headlight='false'/>
     <Transform DEF='bottleCap' rotation='-0.8232 -0.4015 0.4015 -1.764' scale='0.553 0.553 0.05777' translation='-0.1945 2.88 -1.128'>
       <TimeSensor DEF='bottleCap-TIMER' cycleInterval='4.125' loop='true'/>
       <PositionInterpolator DEF='bottleCap-POS-INTERP' key='0 0.02424 0.04848 0.07273 0.09697 0.1212 0.1455 0.1697 0.1939 0.2182 0.2424 0.2667 0.2909 0.3152 0.3394 0.3636 0.3879 0.4121 0.4364 0.4606 0.4848 0.5091 0.5333 0.5576 0.5818 0.6061 0.6303 0.6545 0.6788 0.703 0.7273 0.7515 0.7758 0.8 0.8242 0.8485 0.8727 0.897 0.9212 0.9455 0.9697 0.9939 1' keyValue='-0.1945 2.88 -1.128 -0.1943 2.88 -1.128 -0.1937 2.88 -1.129 -0.1929 2.88 -1.131 -0.1921 2.88 -1.132 -0.1916 2.88 -1.134 -0.1915 2.88 -1.137 -0.1919 2.88 -1.139 -0.1927 2.88 -1.141 -0.1939 2.88 -1.143 -0.1952 2.88 -1.145 -0.1966 2.88 -1.146 -0.1982 2.88 -1.146 -0.1998 2.88 -1.147 -0.2015 2.88 -1.147 -0.2032 2.88 -1.148 -0.2049 2.88 -1.147 -0.2066 2.88 -1.147 -0.2082 2.88 -1.146 -0.2097 2.88 -1.145 -0.211 2.88 -1.144 -0.2122 2.88 -1.143 -0.2131 2.88 -1.142 -0.2138 2.88 -1.14 -0.2143 2.88 -1.138 -0.2145 2.88 -1.137 -0.2145 2.88 -1.135 -0.2142 2.88 -1.133 -0.2136 2.88 -1.131 -0.2128 2.88 -1.13 -0.2118 2.88 -1.129 -0.2105 2.88 -1.127 -0.209 2.88 -1.126 -0.207 2.88 -1.125 -0.2048 2.88 -1.125 -0.2025 2.88 -1.124 -0.2003 2.88 -1.125 -0.1983 2.88 -1.125 -0.1967 2.88 -1.126 -0.1956 2.88 -1.127 -0.1948 2.88 -1.128 -0.1945 2.88 -1.128 -0.1945 2.88 -1.128'/>
